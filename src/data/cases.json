@@ -168,5 +168,22 @@
     "timeline": "3 maanden",
     "screenshot": "/images/cases/zwangerschapscalculator.jpg",
     "tags": ["Healthcare", "Pregnancy", "Medical Tool"]
+  },
+  {
+    "slug": "raakt",
+    "titel": "RAAKT Bokstherapie",
+    "website": "raakt.be",
+    "klant": "RAAKT",
+    "type": "Webdesign",
+    "services": ["Webdesign", "SEO", "Branding"],
+    "resultaten": {
+      "design": "Volledig custom design",
+      "seo": "Lokale SEO geoptimaliseerd",
+      "conversies": "Online boekingen via contactformulier"
+    },
+    "beschrijving": "Website voor bokstherapie praktijk. Krachtig design dat de energie van de therapie weerspiegelt, met focus op conversie en vindbaarheid.",
+    "timeline": "3 maanden",
+    "screenshot": "/images/cases/raakt.jpg",
+    "tags": ["Webdesign", "Therapie", "Local Business"]
   }
 ]
