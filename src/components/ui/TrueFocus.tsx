@@ -16,21 +16,18 @@ export function TrueFocus({
   duration = 1000, 
   delay = 0 
 }: TrueFocusProps) {
-  const [isInView, setIsInView] = useState(false);
-  const [isAnimated, setIsAnimated] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !isAnimated) {
-          setTimeout(() => {
-            setIsInView(true);
-            setIsAnimated(true);
-          }, delay);
+        if (entry.isIntersecting) {
+          setTimeout(() => setIsVisible(true), delay);
+          observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     if (elementRef.current) {
@@ -38,43 +35,21 @@ export function TrueFocus({
     }
 
     return () => observer.disconnect();
-  }, [delay, isAnimated]);
+  }, [delay]);
 
   return (
-    <div
-      ref={elementRef}
-      className={cn(
-        "relative overflow-hidden",
-        className
-      )}
-    >
+    <div ref={elementRef} className={cn("relative", className)}>
       <div
-        className={cn(
-          "transition-all ease-out transform",
-          isInView 
-            ? "translate-y-0 opacity-100 scale-100 blur-0" 
-            : "translate-y-8 opacity-0 scale-95 blur-sm"
-        )}
+        className="transition-all ease-out"
         style={{
           transitionDuration: `${duration}ms`,
+          transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+          opacity: isVisible ? 1 : 0,
+          filter: isVisible ? 'blur(0px)' : 'blur(4px)',
         }}
       >
         {children}
       </div>
-      
-      {/* Focus ring effect */}
-      <div
-        className={cn(
-          "absolute inset-0 rounded-lg transition-all ease-out pointer-events-none",
-          isInView
-            ? "ring-2 ring-accent/20 ring-offset-2 ring-offset-background scale-100 opacity-100"
-            : "ring-0 ring-accent/0 ring-offset-0 scale-95 opacity-0"
-        )}
-        style={{
-          transitionDuration: `${duration * 1.2}ms`,
-          transitionDelay: `${duration * 0.3}ms`,
-        }}
-      />
     </div>
   );
 }

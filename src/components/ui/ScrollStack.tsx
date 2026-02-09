@@ -1,75 +1,67 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
 interface ScrollStackProps {
   children: React.ReactNode[];
   className?: string;
-  stackOffset?: number;
 }
 
-export function ScrollStack({ children, className, stackOffset = 20 }: ScrollStackProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
+export function ScrollStack({ children, className }: ScrollStackProps) {
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!containerRef.current) return;
-
-      const container = containerRef.current;
-      const rect = container.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      // Calculate scroll progress based on container position
-      const startTrigger = windowHeight * 0.8;
-      const endTrigger = windowHeight * 0.2;
-      
-      let progress = 0;
-      if (rect.top < startTrigger && rect.bottom > endTrigger) {
-        const totalScrollDistance = rect.height + (startTrigger - endTrigger);
-        const scrolled = startTrigger - rect.top;
-        progress = Math.max(0, Math.min(1, scrolled / totalScrollDistance));
-      }
-
-      setScrollProgress(progress);
+      itemRefs.current.forEach((el, index) => {
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        const stickyTop = 80 + index * 20; // Each card stacks 20px lower
+        
+        // When the card is stuck at the top, scale it down slightly
+        // to create the "stack" visual effect
+        if (rect.top <= stickyTop + 1) {
+          const nextEl = itemRefs.current[index + 1];
+          if (nextEl) {
+            const nextRect = nextEl.getBoundingClientRect();
+            const nextStickyTop = 80 + (index + 1) * 20;
+            // How far the next card has pushed us
+            const overlap = Math.max(0, (nextStickyTop + 200) - nextRect.top);
+            const maxOverlap = 200;
+            const progress = Math.min(1, overlap / maxOverlap);
+            
+            el.style.transform = `scale(${1 - progress * 0.05})`;
+            el.style.opacity = `${1 - progress * 0.3}`;
+          }
+        } else {
+          el.style.transform = 'scale(1)';
+          el.style.opacity = '1';
+        }
+      });
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial call
-
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [children.length]);
 
   return (
-    <div 
-      ref={containerRef}
-      className={cn("relative w-full", className)}
-      style={{ minHeight: `${children.length * 100}vh` }}
-    >
-      {children.map((child, index) => {
-        const itemProgress = Math.max(0, Math.min(1, 
-          (scrollProgress - (index / children.length)) * children.length
-        ));
-        
-        const translateY = (1 - itemProgress) * stackOffset * (children.length - index);
-        const scale = 0.95 + (itemProgress * 0.05);
-        const opacity = 0.3 + (itemProgress * 0.7);
-
-        return (
-          <div
-            key={index}
-            className="sticky top-20 transform transition-all duration-300 ease-out"
-            style={{
-              transform: `translateY(${translateY}px) scale(${scale})`,
-              opacity: opacity,
-              zIndex: children.length - index,
-            }}
-          >
-            {child}
-          </div>
-        );
-      })}
+    <div className={cn("relative", className)}>
+      {children.map((child, index) => (
+        <div
+          key={index}
+          ref={(el) => { itemRefs.current[index] = el; }}
+          className="sticky transition-[transform,opacity] duration-200 ease-out mb-8 last:mb-0"
+          style={{
+            top: `${80 + index * 20}px`,
+            zIndex: children.length + index, // Later cards on top
+          }}
+        >
+          {child}
+        </div>
+      ))}
+      {/* Extra scroll space so last card can fully reveal */}
+      <div className="h-[30vh]" />
     </div>
   );
 }

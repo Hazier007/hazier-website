@@ -1,12 +1,12 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
 
 :root {
   --background: #0a0a0a;
   --foreground: #ffffff;
   --background-secondary: #111111;
   --background-tertiary: #1a1a1a;
-  --accent: #FF8C42;
+  --accent: #F5911E;
   --text-secondary: #a3a3a3;
   --text-tertiary: #737373;
   --border: #262626;
