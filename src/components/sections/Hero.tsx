@@ -1,13 +1,30 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { TrueFocus } from "@/components/ui/TrueFocus";
-import { LightPillar } from "@/components/ui/LightPillar";
 import { Section } from "@/components/ui/Section";
+
+const LiquidEther = dynamic(() => import("@/components/ui/LiquidEther"), {
+  ssr: false,
+});
 
 export function Hero() {
   return (
     <Section size="xl" className="relative min-h-screen flex items-center">
-      <LightPillar className="opacity-60" />
+      {/* Liquid Ether Background */}
+      <div className="absolute inset-0 z-0 opacity-40">
+        <LiquidEther
+          colors={['#F5911E', '#FF6B00', '#1a1a1a']}
+          mouseForce={15}
+          cursorSize={120}
+          resolution={0.4}
+          autoDemo={true}
+          autoSpeed={0.4}
+          autoIntensity={2.5}
+        />
+      </div>
       
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <TrueFocus duration={1200}>
@@ -53,7 +70,7 @@ export function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <div className="w-6 h-10 border-2 border-border rounded-full flex justify-center">
           <div className="w-1 h-3 bg-accent rounded-full mt-2 animate-pulse"></div>
         </div>
