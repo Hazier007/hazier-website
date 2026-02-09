@@ -1,0 +1,219 @@
+{
+  "linkbuilding": [
+    {
+      "naam": "Starter",
+      "prijs": 199,
+      "periode": "maand",
+      "beschrijving": "Perfect voor startende bedrijven die hun online autoriteit willen opbouwen",
+      "features": [
+        "5 hoogwaardige backlinks per maand",
+        "DR 20+ websites",
+        "Nederlandse content",
+        "Maandelijks rapport",
+        "Email support"
+      ],
+      "populair": false,
+      "stripe_price_id": "price_linkbuilding_starter"
+    },
+    {
+      "naam": "Growth",
+      "prijs": 449,
+      "periode": "maand", 
+      "beschrijving": "Voor groeiende bedrijven die serieus werk willen maken van hun SEO",
+      "features": [
+        "15 hoogwaardige backlinks per maand",
+        "DR 30+ websites",
+        "Nederlandse + Engelse content",
+        "Concurrent analyse",
+        "Maandelijks strategiegesprek",
+        "Priority support"
+      ],
+      "populair": true,
+      "stripe_price_id": "price_linkbuilding_growth"
+    },
+    {
+      "naam": "Authority",
+      "prijs": 899,
+      "periode": "maand",
+      "beschrijving": "Voor marktleiders die hun dominante positie willen behouden en uitbreiden",
+      "features": [
+        "30+ hoogwaardige backlinks per maand",
+        "DR 40+ websites",
+        "Meertalige content (NL/EN/FR)",
+        "Geavanceerde competitor tracking",
+        "Wekelijkse rapportage",
+        "Dedicated account manager",
+        "Custom link opportunities"
+      ],
+      "populair": false,
+      "stripe_price_id": "price_linkbuilding_authority"
+    }
+  ],
+  "seo": [
+    {
+      "naam": "SEO Audit",
+      "prijs": 297,
+      "periode": "eenmalig",
+      "beschrijving": "Volledige technische en strategische analyse van je website",
+      "features": [
+        "50+ punt technische audit",
+        "Keyword gap analyse",
+        "Concurrent benchmarking", 
+        "Actionable SEO roadmap",
+        "1 uur strategiesessie",
+        "30 dagen email support"
+      ],
+      "populair": false,
+      "stripe_price_id": "price_seo_audit",
+      "delivery": "5 werkdagen"
+    },
+    {
+      "naam": "Local SEO",
+      "prijs": 349,
+      "periode": "maand",
+      "beschrijving": "Lokale zichtbaarheid voor bedrijven die klanten in hun regio bedienen",
+      "features": [
+        "Google My Business optimalisatie",
+        "Local citation building",
+        "Review management systeem",
+        "Lokale content strategie",
+        "NAP consistency check",
+        "Local ranking tracking"
+      ],
+      "populair": true,
+      "stripe_price_id": "price_seo_local"
+    },
+    {
+      "naam": "Full SEO",
+      "prijs": 699,
+      "periode": "maand",
+      "beschrijving": "Complete SEO strategie voor serieuze online groei",
+      "features": [
+        "Technische SEO optimalisatie",
+        "Content marketing strategie",
+        "Keyword research & targeting",
+        "On-page optimalisatie",
+        "Link building (10 links/maand)",
+        "Maandelijkse strategiegesprekken",
+        "Uitgebreide rapportage",
+        "Conversion optimalisatie"
+      ],
+      "populair": false,
+      "stripe_price_id": "price_seo_full"
+    },
+    {
+      "naam": "Programmatic SEO",
+      "prijs": "Op maat",
+      "periode": "project",
+      "beschrijving": "Automatische generatie van honderden SEO-geoptimaliseerde pagina's",
+      "features": [
+        "Custom programmatic setup",
+        "Template ontwikkeling",
+        "Data integratie",
+        "Automatische content generatie",
+        "Technical implementation",
+        "Performance monitoring",
+        "Scaling strategy"
+      ],
+      "populair": false,
+      "contact_required": true
+    }
+  ],
+  "webdesign": [
+    {
+      "naam": "One-pager",
+      "prijs": 997,
+      "periode": "eenmalig",
+      "beschrijving": "Moderne single-page website voor startups en freelancers",
+      "features": [
+        "Responsive design",
+        "SEO geoptimaliseerd",
+        "Contact formulier",
+        "Google Analytics setup",
+        "2 design concepten",
+        "1 maand gratis onderhoud"
+      ],
+      "populair": false,
+      "stripe_price_id": "price_webdesign_onepager",
+      "delivery": "2-3 weken"
+    },
+    {
+      "naam": "Business Site", 
+      "prijs": 2497,
+      "periode": "eenmalig",
+      "beschrijving": "Professionele bedrijfswebsite met 5-10 pagina's",
+      "features": [
+        "5-10 professionele pagina's",
+        "CMS voor zelf beheren",
+        "SEO geoptimaliseerd",
+        "Contact & quote formulieren",
+        "Google Analytics & Search Console",
+        "3 design concepten",
+        "3 maanden gratis onderhoud"
+      ],
+      "populair": true,
+      "stripe_price_id": "price_webdesign_business",
+      "delivery": "3-4 weken"
+    },
+    {
+      "naam": "Webshop",
+      "prijs": 3997,
+      "periode": "eenmalig", 
+      "beschrijving": "Complete e-commerce oplossing voor online verkopen",
+      "features": [
+        "Volledige webshop functionaliteit",
+        "Product catalogus beheer",
+        "Betaling integraties (Mollie/Stripe)",
+        "Voorraad management",
+        "SEO geoptimaliseerd",
+        "Mobile-first design",
+        "6 maanden gratis onderhoud"
+      ],
+      "populair": false,
+      "stripe_price_id": "price_webdesign_webshop",
+      "delivery": "4-6 weken"
+    },
+    {
+      "naam": "Onderhoud",
+      "prijs": 99,
+      "periode": "maand",
+      "beschrijving": "Website onderhoud en support voor zorgeloze online aanwezigheid",
+      "features": [
+        "Maandelijkse updates",
+        "Security monitoring",
+        "Backup management", 
+        "Performance optimalisatie",
+        "Content updates (2u/maand)",
+        "Priority support"
+      ],
+      "populair": false,
+      "stripe_price_id": "price_webdesign_onderhoud"
+    }
+  ],
+  "addons": [
+    {
+      "naam": "Copywriting",
+      "prijs": 150,
+      "periode": "per pagina",
+      "beschrijving": "Professionele teksten die converteren"
+    },
+    {
+      "naam": "Logo Design", 
+      "prijs": 297,
+      "periode": "eenmalig",
+      "beschrijving": "Uniek logo ontwerp inclusief variaties"
+    },
+    {
+      "naam": "Content Fotografie",
+      "prijs": 497,
+      "periode": "dag",
+      "beschrijving": "Professionele bedrijfsfotografie op locatie"
+    },
+    {
+      "naam": "Google Ads Setup",
+      "prijs": 397,
+      "periode": "eenmalig", 
+      "beschrijving": "Professionele Google Ads campagne opzet"
+    }
+  ]
+}

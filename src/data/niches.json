@@ -1,0 +1,366 @@
+[
+  {
+    "slug": "restaurants",
+    "naam": "Restaurants",
+    "beschrijving": "Professionele SEO en webdesign voor restaurants, cafés en eetgelegenheden om meer gasten te trekken",
+    "seoTitle": "SEO voor Restaurants | Meer Gasten via Google",
+    "webdesignTitle": "Webdesign voor Restaurants | Professionele Websites"
+  },
+  {
+    "slug": "advocaten",
+    "naam": "Advocaten",
+    "beschrijving": "Specialistische SEO en webdesign voor advocatenkantoren om meer cliënten te bereiken",
+    "seoTitle": "SEO voor Advocaten | Meer Cliënten via Google",
+    "webdesignTitle": "Webdesign voor Advocaten | Professionele Advocatenwebsites"
+  },
+  {
+    "slug": "tandartsen",
+    "naam": "Tandartsen",
+    "beschrijving": "SEO en webdesign voor tandartspraktijken om nieuwe patiënten aan te trekken",
+    "seoTitle": "SEO voor Tandartsen | Meer Patiënten via Google",
+    "webdesignTitle": "Webdesign voor Tandartsen | Moderne Praktijkwebsites"
+  },
+  {
+    "slug": "aannemers",
+    "naam": "Aannemers",
+    "beschrijving": "SEO en webdesign voor bouwbedrijven en aannemers om meer opdrachten binnen te halen",
+    "seoTitle": "SEO voor Aannemers | Meer Opdrachten via Google",
+    "webdesignTitle": "Webdesign voor Aannemers | Professionele Bouwwebsites"
+  },
+  {
+    "slug": "loodgieters",
+    "naam": "Loodgieters",
+    "beschrijving": "SEO en webdesign voor loodgietersbedrijven om meer klanten te bereiken",
+    "seoTitle": "SEO voor Loodgieters | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Loodgieters | Moderne Vakmanwebsites"
+  },
+  {
+    "slug": "elektriciens",
+    "naam": "Elektriciens",
+    "beschrijving": "SEO en webdesign voor elektriciens om meer opdrachten te genereren",
+    "seoTitle": "SEO voor Elektriciens | Meer Opdrachten via Google",
+    "webdesignTitle": "Webdesign voor Elektriciens | Professionele Elektrowebsites"
+  },
+  {
+    "slug": "kappers",
+    "naam": "Kappers",
+    "beschrijving": "SEO en webdesign voor kapsalons om meer klanten aan te trekken",
+    "seoTitle": "SEO voor Kappers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Kappers | Stijlvolle Salonwebsites"
+  },
+  {
+    "slug": "accountants",
+    "naam": "Accountants",
+    "beschrijving": "SEO en webdesign voor boekhoudkantoren en accountants om meer cliënten te werven",
+    "seoTitle": "SEO voor Accountants | Meer Cliënten via Google",
+    "webdesignTitle": "Webdesign voor Accountants | Professionele Kantoorwebsites"
+  },
+  {
+    "slug": "vastgoedmakelaars",
+    "naam": "Vastgoedmakelaars",
+    "beschrijving": "SEO en webdesign voor makelaars om meer woningzoekers en verkopers te bereiken",
+    "seoTitle": "SEO voor Makelaars | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Makelaars | Moderne Vastgoedwebsites"
+  },
+  {
+    "slug": "fysiotherapeuten",
+    "naam": "Fysiotherapeuten",
+    "beschrijving": "SEO en webdesign voor fysiotherapiepraktijken om nieuwe patiënten aan te trekken",
+    "seoTitle": "SEO voor Fysiotherapeuten | Meer Patiënten via Google",
+    "webdesignTitle": "Webdesign voor Fysiotherapeuten | Professionele Praktijkwebsites"
+  },
+  {
+    "slug": "dierenartsen",
+    "naam": "Dierenartsen",
+    "beschrijving": "SEO en webdesign voor dierenklinieken om meer huisdiereigenaren te bereiken",
+    "seoTitle": "SEO voor Dierenartsen | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Dierenartsen | Moderne Klinieken websites"
+  },
+  {
+    "slug": "bakkers",
+    "naam": "Bakkers",
+    "beschrijving": "SEO en webdesign voor bakkerijen om meer lokale klanten aan te trekken",
+    "seoTitle": "SEO voor Bakkers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Bakkers | Lekkere Bakkerijwebsites"
+  },
+  {
+    "slug": "slagers",
+    "naam": "Slagers",
+    "beschrijving": "SEO en webdesign voor slagerijen om meer klanten te werven",
+    "seoTitle": "SEO voor Slagers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Slagers | Verse Slagerijwebsites"
+  },
+  {
+    "slug": "bloemisten",
+    "naam": "Bloemisten",
+    "beschrijving": "SEO en webdesign voor bloemenwinkels om meer klanten aan te trekken",
+    "seoTitle": "SEO voor Bloemisten | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Bloemisten | Kleurrijke Bloemenwebsites"
+  },
+  {
+    "slug": "fotografen",
+    "naam": "Fotografen",
+    "beschrijving": "SEO en webdesign voor fotografen om meer opdrachten binnen te halen",
+    "seoTitle": "SEO voor Fotografen | Meer Opdrachten via Google",
+    "webdesignTitle": "Webdesign voor Fotografen | Visuele Portfoliowebsites"
+  },
+  {
+    "slug": "personal-trainers",
+    "naam": "Personal Trainers",
+    "beschrijving": "SEO en webdesign voor personal trainers om meer cliënten te bereiken",
+    "seoTitle": "SEO voor Personal Trainers | Meer Cliënten via Google",
+    "webdesignTitle": "Webdesign voor Personal Trainers | Sportieve Websites"
+  },
+  {
+    "slug": "coaches",
+    "naam": "Coaches",
+    "beschrijving": "SEO en webdesign voor life coaches en business coaches om meer cliënten aan te trekken",
+    "seoTitle": "SEO voor Coaches | Meer Cliënten via Google",
+    "webdesignTitle": "Webdesign voor Coaches | Inspirerende Coachwebsites"
+  },
+  {
+    "slug": "consultants",
+    "naam": "Consultants",
+    "beschrijving": "SEO en webdesign voor consultants om meer projecten binnen te halen",
+    "seoTitle": "SEO voor Consultants | Meer Projecten via Google",
+    "webdesignTitle": "Webdesign voor Consultants | Professionele Websites"
+  },
+  {
+    "slug": "architecten",
+    "naam": "Architecten",
+    "beschrijving": "SEO en webdesign voor architectenbureaus om meer opdrachten te genereren",
+    "seoTitle": "SEO voor Architecten | Meer Opdrachten via Google",
+    "webdesignTitle": "Webdesign voor Architecten | Creatieve Architectuurwebsites"
+  },
+  {
+    "slug": "interieurontwerpers",
+    "naam": "Interieurontwerpers",
+    "beschrijving": "SEO en webdesign voor interieurarchitecten om meer klanten te bereiken",
+    "seoTitle": "SEO voor Interieurontwerpers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Interieurontwerpers | Stijlvolle Portfolios"
+  },
+  {
+    "slug": "schilders",
+    "naam": "Schilders",
+    "beschrijving": "SEO en webdesign voor schildersbedrijven om meer opdrachten binnen te halen",
+    "seoTitle": "SEO voor Schilders | Meer Opdrachten via Google",
+    "webdesignTitle": "Webdesign voor Schilders | Kleurrijke Vakmanwebsites"
+  },
+  {
+    "slug": "dakwerkers",
+    "naam": "Dakwerkers",
+    "beschrijving": "SEO en webdesign voor dakdekkersbedrijven om meer klanten te werven",
+    "seoTitle": "SEO voor Dakwerkers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Dakwerkers | Stevige Vakmanwebsites"
+  },
+  {
+    "slug": "tuiniers",
+    "naam": "Tuiniers",
+    "beschrijving": "SEO en webdesign voor tuinaanleggers en hovenier bedrijven",
+    "seoTitle": "SEO voor Tuiniers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Tuiniers | Groene Hovenierswebsites"
+  },
+  {
+    "slug": "schoonmaakbedrijven",
+    "naam": "Schoonmaakbedrijven",
+    "beschrijving": "SEO en webdesign voor schoonmaakbedrijven om meer contracten binnen te halen",
+    "seoTitle": "SEO voor Schoonmaakbedrijven | Meer Contracten via Google",
+    "webdesignTitle": "Webdesign voor Schoonmaakbedrijven | Professionele Websites"
+  },
+  {
+    "slug": "verhuizers",
+    "naam": "Verhuizers",
+    "beschrijving": "SEO en webdesign voor verhuisbedrijven om meer verhuizingen te boeken",
+    "seoTitle": "SEO voor Verhuizers | Meer Boekingen via Google",
+    "webdesignTitle": "Webdesign voor Verhuizers | Betrouwbare Verhuiswebsites"
+  },
+  {
+    "slug": "autogarages",
+    "naam": "Autogarages",
+    "beschrijving": "SEO en webdesign voor autogarages en werkplaatsen om meer klanten te trekken",
+    "seoTitle": "SEO voor Autogarages | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Autogarages | Professionele Garagewebsites"
+  },
+  {
+    "slug": "fietsenmakers",
+    "naam": "Fietsenmakers",
+    "beschrijving": "SEO en webdesign voor fietsenmakers om meer reparaties en verkopen te genereren",
+    "seoTitle": "SEO voor Fietsenmakers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Fietsenmakers | Wielervriendelijke Websites"
+  },
+  {
+    "slug": "juweliers",
+    "naam": "Juweliers",
+    "beschrijving": "SEO en webdesign voor juweliers om meer klanten aan te trekken",
+    "seoTitle": "SEO voor Juweliers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Juweliers | Luxe Juwelierswebsites"
+  },
+  {
+    "slug": "opticiens",
+    "naam": "Opticiens",
+    "beschrijving": "SEO en webdesign voor opticiens om meer klanten te werven",
+    "seoTitle": "SEO voor Opticiens | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Opticiens | Heldere Optiekwebsites"
+  },
+  {
+    "slug": "apothekers",
+    "naam": "Apothekers",
+    "beschrijving": "SEO en webdesign voor apotheken om meer klanten te bereiken",
+    "seoTitle": "SEO voor Apothekers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Apothekers | Betrouwbare Apotheekwebsites"
+  },
+  {
+    "slug": "kinderopvang",
+    "naam": "Kinderopvang",
+    "beschrijving": "SEO en webdesign voor crèches en kinderopvangcentra om meer ouders te bereiken",
+    "seoTitle": "SEO voor Kinderopvang | Meer Ouders via Google",
+    "webdesignTitle": "Webdesign voor Kinderopvang | Kindvriendelijke Websites"
+  },
+  {
+    "slug": "hotels",
+    "naam": "Hotels",
+    "beschrijving": "SEO en webdesign voor hotels om meer boekingen te genereren",
+    "seoTitle": "SEO voor Hotels | Meer Boekingen via Google",
+    "webdesignTitle": "Webdesign voor Hotels | Gastvrije Hotelwebsites"
+  },
+  {
+    "slug": "bed-and-breakfast",
+    "naam": "B&B's",
+    "beschrijving": "SEO en webdesign voor Bed & Breakfasts om meer gasten aan te trekken",
+    "seoTitle": "SEO voor B&B's | Meer Gasten via Google",
+    "webdesignTitle": "Webdesign voor B&B's | Gezellige B&B Websites"
+  },
+  {
+    "slug": "cafes",
+    "naam": "Cafés",
+    "beschrijving": "SEO en webdesign voor cafés en bruine kroegen om meer bezoekers te krijgen",
+    "seoTitle": "SEO voor Cafés | Meer Bezoekers via Google",
+    "webdesignTitle": "Webdesign voor Cafés | Gezellige Caféwebsites"
+  },
+  {
+    "slug": "eventplanners",
+    "naam": "Eventplanners",
+    "beschrijving": "SEO en webdesign voor eventorganisatoren om meer evenementen te boeken",
+    "seoTitle": "SEO voor Eventplanners | Meer Events via Google",
+    "webdesignTitle": "Webdesign voor Eventplanners | Spectaculaire Eventwebsites"
+  },
+  {
+    "slug": "traiteurs",
+    "naam": "Traiteurs",
+    "beschrijving": "SEO en webdesign voor traiteurs om meer cateringopdrachten binnen te halen",
+    "seoTitle": "SEO voor Traiteurs | Meer Opdrachten via Google",
+    "webdesignTitle": "Webdesign voor Traiteurs | Smakelijke Traiteurwebsites"
+  },
+  {
+    "slug": "drukkerijen",
+    "naam": "Drukkerijen",
+    "beschrijving": "SEO en webdesign voor drukkerijen om meer opdrachten te genereren",
+    "seoTitle": "SEO voor Drukkerijen | Meer Opdrachten via Google",
+    "webdesignTitle": "Webdesign voor Drukkerijen | Professionele Drukkerijwebsites"
+  },
+  {
+    "slug": "it-bedrijven",
+    "naam": "IT-bedrijven",
+    "beschrijving": "SEO en webdesign voor IT-consultancy en softwarebedrijven",
+    "seoTitle": "SEO voor IT-bedrijven | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor IT-bedrijven | Technologische IT-websites"
+  },
+  {
+    "slug": "webshops",
+    "naam": "Webshops",
+    "beschrijving": "SEO en webdesign voor e-commerce bedrijven om meer verkopen te genereren",
+    "seoTitle": "SEO voor Webshops | Meer Verkopen via Google",
+    "webdesignTitle": "Webdesign voor Webshops | Conversiegerichte E-commerce"
+  },
+  {
+    "slug": "e-commerce",
+    "naam": "E-commerce",
+    "beschrijving": "SEO en webdesign voor online winkels om meer bezoekers en verkopen te krijgen",
+    "seoTitle": "SEO voor E-commerce | Meer Verkopen via Google",
+    "webdesignTitle": "Webdesign voor E-commerce | Professionele Online Winkels"
+  },
+  {
+    "slug": "saas",
+    "naam": "SaaS",
+    "beschrijving": "SEO en webdesign voor Software as a Service bedrijven om meer gebruikers te werven",
+    "seoTitle": "SEO voor SaaS | Meer Gebruikers via Google",
+    "webdesignTitle": "Webdesign voor SaaS | Moderne Software Websites"
+  },
+  {
+    "slug": "startups",
+    "naam": "Startups",
+    "beschrijving": "SEO en webdesign voor startups om online zichtbaarheid en groei te realiseren",
+    "seoTitle": "SEO voor Startups | Online Groei via Google",
+    "webdesignTitle": "Webdesign voor Startups | Innovatieve Startup Websites"
+  },
+  {
+    "slug": "freelancers",
+    "naam": "Freelancers",
+    "beschrijving": "SEO en webdesign voor freelancers om meer opdrachten binnen te halen",
+    "seoTitle": "SEO voor Freelancers | Meer Opdrachten via Google",
+    "webdesignTitle": "Webdesign voor Freelancers | Persoonlijke Portfolio Sites"
+  },
+  {
+    "slug": "zzpers",
+    "naam": "ZZP'ers",
+    "beschrijving": "SEO en webdesign voor zelfstandigen zonder personeel om meer klanten te bereiken",
+    "seoTitle": "SEO voor ZZP'ers | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor ZZP'ers | Professionele ZZP Websites"
+  },
+  {
+    "slug": "kmos",
+    "naam": "KMO's",
+    "beschrijving": "SEO en webdesign voor kleine en middelgrote ondernemingen",
+    "seoTitle": "SEO voor KMO's | Meer Groei via Google",
+    "webdesignTitle": "Webdesign voor KMO's | Professionele Bedrijfswebsites"
+  },
+  {
+    "slug": "kleine-bedrijven",
+    "naam": "Kleine bedrijven",
+    "beschrijving": "SEO en webdesign voor kleine bedrijven om online zichtbaarheid te verhogen",
+    "seoTitle": "SEO voor Kleine Bedrijven | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Kleine Bedrijven | Lokale Bedrijfswebsites"
+  },
+  {
+    "slug": "middelgrote-bedrijven",
+    "naam": "Middelgrote bedrijven",
+    "beschrijving": "SEO en webdesign voor middelgrote ondernemingen om marktpositie te versterken",
+    "seoTitle": "SEO voor Middelgrote Bedrijven | Marktleiderschap via Google",
+    "webdesignTitle": "Webdesign voor Middelgrote Bedrijven | Schaalbare Websites"
+  },
+  {
+    "slug": "wellness",
+    "naam": "Wellness",
+    "beschrijving": "SEO en webdesign voor wellness centra, spa's en massage praktijken",
+    "seoTitle": "SEO voor Wellness | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Wellness | Ontspannende Wellness Websites"
+  },
+  {
+    "slug": "fitness",
+    "naam": "Fitness",
+    "beschrijving": "SEO en webdesign voor fitnesscentra en sportscholen om meer leden te werven",
+    "seoTitle": "SEO voor Fitness | Meer Leden via Google",
+    "webdesignTitle": "Webdesign voor Fitness | Energieke Fitnesswebsites"
+  },
+  {
+    "slug": "schoonheidssalons",
+    "naam": "Schoonheidssalons",
+    "beschrijving": "SEO en webdesign voor schoonheidsspecialisten en beauty salons",
+    "seoTitle": "SEO voor Schoonheidssalons | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Schoonheidssalons | Mooie Beauty Websites"
+  },
+  {
+    "slug": "nagelstudios",
+    "naam": "Nagelstudios",
+    "beschrijving": "SEO en webdesign voor nagelstylisten om meer afspraken te boeken",
+    "seoTitle": "SEO voor Nagelstudios | Meer Afspraken via Google",
+    "webdesignTitle": "Webdesign voor Nagelstudios | Stijlvolle Nagelwebsites"
+  },
+  {
+    "slug": "tattooshops",
+    "naam": "Tattooshops",
+    "beschrijving": "SEO en webdesign voor tattooartiesten en tattoostudio's",
+    "seoTitle": "SEO voor Tattooshops | Meer Klanten via Google",
+    "webdesignTitle": "Webdesign voor Tattooshops | Creatieve Tattoo Portfolio's"
+  }
+]

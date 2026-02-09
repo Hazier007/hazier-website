@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "naam": "Tom Verschueren",
+    "bedrijf": "Verschueren Dakwerken",
+    "functie": "Eigenaar",
+    "locatie": "Gent",
+    "beoordeling": 5,
+    "review": "Sinds we met Hazier werken, krijgen we elke week nieuwe klanten via Google. Onze website staat nu bovenaan voor 'dakwerken Gent' en de leads blijven maar komen. Echt top!",
+    "resultaat": "+250% meer leads",
+    "avatar": "/images/testimonials/tom-verschueren.jpg",
+    "service": "SEO + Local SEO"
+  },
+  {
+    "id": 2,
+    "naam": "Lisa Van Der Meer",
+    "bedrijf": "Beautysalon Lumière",
+    "functie": "Eigenares",
+    "locatie": "Antwerpen",
+    "beoordeling": 5,
+    "review": "De nieuwe website van Hazier is gewoon perfect! Klanten boeken nu online hun afspraken en ik zie meteen mijn agenda. Het heeft mijn hele business veranderd.",
+    "resultaat": "+180% online boekingen",
+    "avatar": "/images/testimonials/lisa-vandermeer.jpg",
+    "service": "Webdesign + Booking systeem"
+  },
+  {
+    "id": 3,
+    "naam": "Marc Janssens",
+    "bedrijf": "Janssens Advocaten",
+    "functie": "Managing Partner",
+    "locatie": "Mechelen",
+    "beoordeling": 5,
+    "review": "Hazier heeft ons kantoor online zichtbaar gemaakt. We staan nu top 3 voor alle belangrijke zoektermen en krijgen kwalitatieve leads. Zeer professionele aanpak!",
+    "resultaat": "+320% organisch verkeer",
+    "avatar": "/images/testimonials/marc-janssens.jpg",
+    "service": "SEO + Content marketing"
+  },
+  {
+    "id": 4,
+    "naam": "Sophie Claes",
+    "bedrijf": "Restaurant De Zwaan",
+    "functie": "Manager",
+    "locatie": "Brugge",
+    "beoordeling": 5,
+    "review": "Onze nieuwe website is prachtig! Gasten kunnen nu online reserveren en we krijgen veel meer toeristen die ons vinden via Google. Hazier heeft echt geleverd wat ze beloofden.",
+    "resultaat": "+150% online reservaties",
+    "avatar": "/images/testimonials/sophie-claes.jpg",
+    "service": "Webdesign + Reservatiesysteem"
+  },
+  {
+    "id": 5,
+    "naam": "Kevin De Smet",
+    "bedrijf": "De Smet Installaties",
+    "functie": "Zaakvoerder",
+    "locatie": "Kortrijk",
+    "beoordeling": 5,
+    "review": "Fantastische service! Binnen 3 maanden stonden we #1 voor 'loodgieter Kortrijk'. De ROI is enorm - elke euro die we investeren in SEO levert 5 euro op.",
+    "resultaat": "500% ROI op SEO",
+    "avatar": "/images/testimonials/kevin-desmet.jpg",
+    "service": "Local SEO + Google Ads"
+  },
+  {
+    "id": 6,
+    "naam": "Nathalie Peeters",
+    "bedrijf": "FitLife Gym",
+    "functie": "Eigenares",
+    "locatie": "Hasselt",
+    "beoordeling": 5,
+    "review": "Door de programmatic SEO aanpak van Hazier ranken we nu voor honderden zoektermen. Onze membership is verdubbeld in 6 maanden tijd. Absoluut aanrader!",
+    "resultaat": "+200% nieuwe leden",
+    "avatar": "/images/testimonials/nathalie-peeters.jpg",
+    "service": "Programmatic SEO + Webdesign"
+  }
+]

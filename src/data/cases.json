@@ -1,0 +1,172 @@
+[
+  {
+    "slug": "ovl-slotenmaker",
+    "titel": "OVL Slotenmaker",
+    "website": "ovl-slotenmaker.be",
+    "klant": "Kristof",
+    "type": "Rank & Rent",
+    "services": ["SEO", "Local SEO", "Rank & Rent"],
+    "resultaten": {
+      "traffic": "+450% organisch verkeer",
+      "keywords": "25+ top 3 posities",
+      "conversies": "€3.500+ maandelijkse leads"
+    },
+    "beschrijving": "Complete rank & rent strategie voor slotenmaker services in Oost-Vlaanderen. Van 0 naar marktleider in lokale zoekresultaten.",
+    "timeline": "6 maanden",
+    "screenshot": "/images/cases/ovl-slotenmaker.jpg",
+    "tags": ["Local SEO", "Lead Generation", "Rank & Rent"]
+  },
+  {
+    "slug": "security-tools",
+    "titel": "Security Tools",
+    "website": "security-tools.be",
+    "klant": "Kristof", 
+    "type": "E-commerce SEO",
+    "services": ["SEO", "E-commerce", "Content Marketing"],
+    "resultaten": {
+      "traffic": "+280% organisch verkeer",
+      "omzet": "+150% online verkopen",
+      "keywords": "50+ commerciële keywords top 10"
+    },
+    "beschrijving": "E-commerce SEO optimalisatie voor veiligheidsequipment. Focus op product pages en commerciële zoekintentie.",
+    "timeline": "8 maanden",
+    "screenshot": "/images/cases/security-tools.jpg",
+    "tags": ["E-commerce", "Product SEO", "Commercial Keywords"]
+  },
+  {
+    "slug": "techno-preventie",
+    "titel": "Techno Preventie",
+    "website": "techno-preventie.be",
+    "klant": "Kristof",
+    "type": "Local SEO",
+    "services": ["Local SEO", "GMB Optimalisatie", "Citations"],
+    "resultaten": {
+      "gmb": "4.8★ beoordeling (45+ reviews)",
+      "local": "Top 3 in local pack voor 15+ termen",
+      "calls": "+200% telefonische leads"
+    },
+    "beschrijving": "Local SEO campagne voor preventiediensten. Google My Business optimalisatie en lokale zichtbaarheid.",
+    "timeline": "4 maanden",
+    "screenshot": "/images/cases/techno-preventie.jpg",
+    "tags": ["Local SEO", "GMB", "Service Business"]
+  },
+  {
+    "slug": "huisartsenvoortman",
+    "titel": "Huisartsen Voortman",
+    "website": "huisartsenvoortman.be",
+    "klant": "Dr. Voortman",
+    "type": "Medical Practice",
+    "services": ["Webdesign", "Local SEO", "GDPR Compliance"],
+    "resultaten": {
+      "patienten": "+35% nieuwe patiënten",
+      "afspraken": "Online afspraken systeem",
+      "compliance": "100% GDPR compliant"
+    },
+    "beschrijving": "Moderne website voor huisartsenpraktijk met patiëntportaal en online afspraken. GDPR-compliant en gebruiksvriendelijk.",
+    "timeline": "3 maanden",
+    "screenshot": "/images/cases/huisartsenvoortman.jpg",
+    "tags": ["Healthcare", "GDPR", "Patient Portal"]
+  },
+  {
+    "slug": "btw-calculator",
+    "titel": "BTW Calculator",
+    "website": "btw-calculator.be",
+    "klant": "Hazier",
+    "type": "Tool Site",
+    "services": ["Webdesign", "SEO", "Tool Development"],
+    "resultaten": {
+      "users": "10.000+ maandelijke gebruikers",
+      "traffic": "Rank #1 voor 'btw calculator'",
+      "engagement": "85% terugkerende bezoekers"
+    },
+    "beschrijving": "Online BTW calculator tool met SEO optimalisatie. Simpel, snel en accuraat voor Belgische ondernemers.",
+    "timeline": "2 maanden",
+    "screenshot": "/images/cases/btw-calculator.jpg",
+    "tags": ["Tool Development", "Utility Site", "High Traffic"]
+  },
+  {
+    "slug": "loonberekening",
+    "titel": "Loonberekening",
+    "website": "loonberekening.be",
+    "klant": "Hazier",
+    "type": "Calculator Tool",
+    "services": ["Tool Development", "SEO", "User Experience"],
+    "resultaten": {
+      "traffic": "15.000+ maandelijke bezoekers",
+      "keywords": "Top 3 voor 'loon berekenen'",
+      "conversies": "25% conversion naar leads"
+    },
+    "beschrijving": "Geavanceerde loonberekeningtool voor Belgische werkgevers en werknemers. Inclusief alle sociale bijdragen.",
+    "timeline": "3 maanden",
+    "screenshot": "/images/cases/loonberekening.jpg",
+    "tags": ["HR Tools", "Belgium Specific", "Lead Generation"]
+  },
+  {
+    "slug": "interesten",
+    "titel": "Interesten Calculator",
+    "website": "interesten.be",
+    "klant": "Hazier",
+    "type": "Financial Tool",
+    "services": ["Tool Development", "Financial Calculations", "SEO"],
+    "resultaten": {
+      "users": "8.000+ unieke bezoekers/maand",
+      "accuracy": "100% accurate berekeningen",
+      "ranking": "#1 voor 'interesten berekenen'"
+    },
+    "beschrijving": "Online interessenberekening tool voor leningen, kredieten en investeringen. Belgische wetgeving conform.",
+    "timeline": "2 maanden",
+    "screenshot": "/images/cases/interesten.jpg",
+    "tags": ["Financial", "Calculator", "Belgium Law"]
+  },
+  {
+    "slug": "collectpro",
+    "titel": "Collect Pro",
+    "website": "collectpro.be",
+    "klant": "Collect Pro",
+    "type": "SaaS Platform",
+    "services": ["Webdesign", "SaaS Marketing", "Conversion Optimization"],
+    "resultaten": {
+      "signups": "+300% aanmeldingen",
+      "conversion": "15% trial-to-paid conversie",
+      "mrr": "€25.000+ MRR bereikt"
+    },
+    "beschrijving": "Complete website redesign voor debt collection SaaS. Focus op enterprise klanten en trust indicators.",
+    "timeline": "6 maanden",
+    "screenshot": "/images/cases/collectpro.jpg",
+    "tags": ["SaaS", "B2B", "Enterprise"]
+  },
+  {
+    "slug": "poxy-programmatic",
+    "titel": "Poxy Programmatic SEO",
+    "website": "poxy.be",
+    "klant": "Poxy",
+    "type": "Programmatic SEO",
+    "services": ["Programmatic SEO", "Content Generation", "Technical SEO"],
+    "resultaten": {
+      "pages": "1.000+ automatisch gegenereerde pagina's",
+      "traffic": "+800% organisch verkeer",
+      "keywords": "500+ long-tail rankings"
+    },
+    "beschrijving": "Grootschalige programmatic SEO implementatie. Automatische content generatie en structuratie voor maximale coverage.",
+    "timeline": "4 maanden",
+    "screenshot": "/images/cases/poxy.jpg",
+    "tags": ["Programmatic SEO", "Automation", "Scale"]
+  },
+  {
+    "slug": "zwangerschapscalculator",
+    "titel": "Zwangerschapscalculator",
+    "website": "zwangerschapscalculator.be",
+    "klant": "Hazier",
+    "type": "Health Tool",
+    "services": ["Health Tool", "SEO", "User Experience"],
+    "resultaten": {
+      "users": "12.000+ aanstaande moeders/maand",
+      "engagement": "90% completion rate",
+      "medical": "Medisch accurate informatie"
+    },
+    "beschrijving": "Zwangerschapscalculator met wekelijkse updates en medische informatie. Vertrouwd door duizenden aanstaande ouders.",
+    "timeline": "3 maanden",
+    "screenshot": "/images/cases/zwangerschapscalculator.jpg",
+    "tags": ["Healthcare", "Pregnancy", "Medical Tool"]
+  }
+]

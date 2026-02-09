@@ -1,0 +1,374 @@
+[
+  {
+    "slug": "gent",
+    "naam": "Gent",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "antwerpen",
+    "naam": "Antwerpen",
+    "provincie": "Antwerpen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "brussel",
+    "naam": "Brussel",
+    "provincie": "Brussels Hoofdstedelijk Gewest",
+    "regio": "Brussels Hoofdstedelijk Gewest"
+  },
+  {
+    "slug": "brugge",
+    "naam": "Brugge",
+    "provincie": "West-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "leuven",
+    "naam": "Leuven",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "mechelen",
+    "naam": "Mechelen",
+    "provincie": "Antwerpen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "hasselt",
+    "naam": "Hasselt",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "kortrijk",
+    "naam": "Kortrijk",
+    "provincie": "West-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "aalst",
+    "naam": "Aalst",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "sint-niklaas",
+    "naam": "Sint-Niklaas",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "dendermonde",
+    "naam": "Dendermonde",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "roeselare",
+    "naam": "Roeselare",
+    "provincie": "West-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "oostende",
+    "naam": "Oostende",
+    "provincie": "West-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "turnhout",
+    "naam": "Turnhout",
+    "provincie": "Antwerpen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "genk",
+    "naam": "Genk",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "tongeren",
+    "naam": "Tongeren",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "ieper",
+    "naam": "Ieper",
+    "provincie": "West-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "lokeren",
+    "naam": "Lokeren",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "wetteren",
+    "naam": "Wetteren",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "deinze",
+    "naam": "Deinze",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "eeklo",
+    "naam": "Eeklo",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "oudenaarde",
+    "naam": "Oudenaarde",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "geraardsbergen",
+    "naam": "Geraardsbergen",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "ninove",
+    "naam": "Ninove",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "vilvoorde",
+    "naam": "Vilvoorde",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "zaventem",
+    "naam": "Zaventem",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "grimbergen",
+    "naam": "Grimbergen",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "halle",
+    "naam": "Halle",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "waregem",
+    "naam": "Waregem",
+    "provincie": "West-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "knokke-heist",
+    "naam": "Knokke-Heist",
+    "provincie": "West-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "blankenberge",
+    "naam": "Blankenberge",
+    "provincie": "West-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "herentals",
+    "naam": "Herentals",
+    "provincie": "Antwerpen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "mol",
+    "naam": "Mol",
+    "provincie": "Antwerpen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "geel",
+    "naam": "Geel",
+    "provincie": "Antwerpen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "lier",
+    "naam": "Lier",
+    "provincie": "Antwerpen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "boom",
+    "naam": "Boom",
+    "provincie": "Antwerpen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "temse",
+    "naam": "Temse",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "beveren",
+    "naam": "Beveren",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "zele",
+    "naam": "Zele",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "hamme",
+    "naam": "Hamme",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "wichelen",
+    "naam": "Wichelen",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "laarne",
+    "naam": "Laarne",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "destelbergen",
+    "naam": "Destelbergen",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "merelbeke",
+    "naam": "Merelbeke",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "melle",
+    "naam": "Melle",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "zottegem",
+    "naam": "Zottegem",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "brakel",
+    "naam": "Brakel",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "ronse",
+    "naam": "Ronse",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "herzele",
+    "naam": "Herzele",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "sint-martens-latem",
+    "naam": "Sint-Martens-Latem",
+    "provincie": "Oost-Vlaanderen",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "aarschot",
+    "naam": "Aarschot",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "diest",
+    "naam": "Diest",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "tienen",
+    "naam": "Tienen",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "asse",
+    "naam": "Asse",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "dilbeek",
+    "naam": "Dilbeek",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "kapelle-op-den-bos",
+    "naam": "Kapelle-op-den-Bos",
+    "provincie": "Vlaams-Brabant",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "beringen",
+    "naam": "Beringen",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "bilzen",
+    "naam": "Bilzen",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "maaseik",
+    "naam": "Maaseik",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "lommel",
+    "naam": "Lommel",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "sint-truiden",
+    "naam": "Sint-Truiden",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  },
+  {
+    "slug": "pelt",
+    "naam": "Pelt",
+    "provincie": "Limburg",
+    "regio": "Vlaanderen"
+  }
+]
