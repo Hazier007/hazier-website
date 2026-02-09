@@ -99,7 +99,7 @@ export function Header() {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center rounded-md p-2 text-text-secondary hover:text-foreground hover:bg-background-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
+              className="inline-flex items-center justify-center rounded-md p-2 text-white hover:text-accent hover:bg-background-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
