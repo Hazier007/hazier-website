@@ -155,7 +155,7 @@ export default async function WebdesignStadPage({ params }: Props) {
                   <h4 className="font-semibold text-foreground mb-4">📞 Lokale service</h4>
                   <div className="space-y-2 text-sm text-text-secondary">
                     <p>📧 Email: info@hazier.be</p>
-                    <p>📱 Telefoon: +32 123 456 789</p>
+                    <p>📱 Telefoon: 0477 19 09 18</p>
                     <p>📍 Actief in heel {stad.provincie}</p>
                     <p>⏱️ Lokale meetings mogelijk</p>
                   </div>
