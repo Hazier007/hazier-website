@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef, useCallback, ReactNode } from 'react';
+import { useLayoutEffect, useRef, useCallback, ReactNode, useState, useEffect } from 'react';
 import Lenis from 'lenis';
 import './ScrollStack.css';
 
@@ -206,60 +206,72 @@ export function ScrollStack({
     updateCardTransforms();
   }, [updateCardTransforms]);
 
+  const isTouchDevice = useRef(false);
+
   const setupLenis = useCallback(() => {
-    if (useWindowScroll) {
-      const lenis = new Lenis({
-        duration: 1.2,
-        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smoothWheel: true,
-        touchMultiplier: 2,
-        infinite: false,
-        wheelMultiplier: 1,
-        lerp: 0.1,
-        syncTouch: true,
-        syncTouchLerp: 0.075
-      });
+    // Detect touch device
+    const isTouch = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    isTouchDevice.current = isTouch;
 
-      lenis.on('scroll', handleScroll);
-
-      const raf = (time: number) => {
-        lenis.raf(time);
-        animationFrameRef.current = requestAnimationFrame(raf);
+    // On touch devices, skip Lenis entirely — use native scroll + rAF for transforms
+    if (isTouch) {
+      let ticking = false;
+      const onScroll = () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            updateCardTransforms();
+            ticking = false;
+          });
+          ticking = true;
+        }
       };
-      animationFrameRef.current = requestAnimationFrame(raf);
 
-      lenisRef.current = lenis;
-      return lenis;
-    } else {
+      if (useWindowScroll) {
+        window.addEventListener('scroll', onScroll, { passive: true });
+      } else {
+        scrollerRef.current?.addEventListener('scroll', onScroll, { passive: true });
+      }
+
+      // Store cleanup ref
+      (scrollerRef.current as any)?.__touchCleanup?.();
+      const target = useWindowScroll ? window : scrollerRef.current;
+      const cleanup = () => target?.removeEventListener('scroll', onScroll);
+      if (scrollerRef.current) (scrollerRef.current as any).__touchCleanup = cleanup;
+
+      return null;
+    }
+
+    // Desktop: use Lenis for smooth wheel scrolling
+    const lenisOptions: any = {
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+      infinite: false,
+      wheelMultiplier: 1,
+      lerp: 0.15,
+      syncTouch: false,
+      touchMultiplier: 1,
+    };
+
+    if (!useWindowScroll) {
       const scroller = scrollerRef.current;
       if (!scroller) return;
-
-      const lenis = new Lenis({
-        wrapper: scroller,
-        content: scroller.querySelector('.scroll-stack-inner') as HTMLElement,
-        duration: 1.2,
-        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smoothWheel: true,
-        touchMultiplier: 2,
-        infinite: false,
-        wheelMultiplier: 1,
-        lerp: 0.1,
-        syncTouch: true,
-        syncTouchLerp: 0.075
-      });
-
-      lenis.on('scroll', handleScroll);
-
-      const raf = (time: number) => {
-        lenis.raf(time);
-        animationFrameRef.current = requestAnimationFrame(raf);
-      };
-      animationFrameRef.current = requestAnimationFrame(raf);
-
-      lenisRef.current = lenis;
-      return lenis;
+      lenisOptions.wrapper = scroller;
+      lenisOptions.content = scroller.querySelector('.scroll-stack-inner') as HTMLElement;
     }
-  }, [handleScroll, useWindowScroll]);
+
+    const lenis = new Lenis(lenisOptions);
+    lenis.on('scroll', handleScroll);
+
+    const raf = (time: number) => {
+      lenis.raf(time);
+      animationFrameRef.current = requestAnimationFrame(raf);
+    };
+    animationFrameRef.current = requestAnimationFrame(raf);
+
+    lenisRef.current = lenis;
+    return lenis;
+  }, [handleScroll, useWindowScroll, updateCardTransforms]);
 
   useLayoutEffect(() => {
     const scroller = scrollerRef.current;
@@ -297,6 +309,8 @@ export function ScrollStack({
       if (lenisRef.current) {
         lenisRef.current.destroy();
       }
+      // Clean up touch scroll listener
+      (scroller as any)?.__touchCleanup?.();
       stackCompletedRef.current = false;
       cardsRef.current = [];
       transformsCache.clear();
