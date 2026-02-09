@@ -38,8 +38,22 @@ export default function ContactPage() {
       icon: "📍",
       title: "Locatie",
       value: "België, Vlaanderen",
-      link: null,
-      description: "Op afstand & on-site"
+      link: "https://maps.app.goo.gl/Fh6KXt3koFZ69mMJ7",
+      description: "Bekijk op Google Maps"
+    },
+    {
+      icon: "📸",
+      title: "Instagram",
+      value: "@hazier.be",
+      link: "https://www.instagram.com/hazier.be/",
+      description: "Volg ons werk"
+    },
+    {
+      icon: "👍",
+      title: "Facebook",
+      value: "hazier.be",
+      link: "https://www.facebook.com/hazier.be",
+      description: "Like onze pagina"
     }
   ];
 

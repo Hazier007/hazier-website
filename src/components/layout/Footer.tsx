@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook, MapPinned } from "lucide-react";
 
 const footerNavigation = {
   diensten: [
@@ -22,21 +22,22 @@ const footerNavigation = {
   ],
 };
 
-const socialLinks: Array<{
-  name: string;
-  href: string;
-  icon?: React.ComponentType<{ className?: string; 'aria-hidden'?: boolean }>;
-}> = [
-  // {
-  //   name: "LinkedIn",
-  //   href: "https://linkedin.com/company/hazier",
-  //   icon: LinkedInIcon,
-  // },
-  // {
-  //   name: "Twitter",
-  //   href: "https://twitter.com/hazier",
-  //   icon: TwitterIcon,
-  // },
+const socialLinks = [
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/hazier.be/",
+    icon: Instagram,
+  },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/hazier.be",
+    icon: Facebook,
+  },
+  {
+    name: "Google Maps",
+    href: "https://maps.app.goo.gl/Fh6KXt3koFZ69mMJ7",
+    icon: MapPinned,
+  },
 ];
 
 export function Footer() {
@@ -64,7 +65,7 @@ export function Footer() {
               </div>
               <div className="flex items-center text-text-secondary">
                 <Phone className="h-4 w-4 mr-2 text-accent" />
-                <a href="tel:+32123456789" className="hover:text-foreground transition-colors">
+                <a href="tel:+32477190918" className="hover:text-foreground transition-colors">
                   0477 19 09 18
                 </a>
               </div>
@@ -86,7 +87,7 @@ export function Footer() {
                     className="text-text-secondary hover:text-accent transition-colors"
                   >
                     <span className="sr-only">{item.name}</span>
-                    {/* <item.icon className="h-5 w-5" aria-hidden="true" /> */}
+                    <item.icon className="h-5 w-5" aria-hidden={true} />
                   </a>
                 ))}
               </div>
