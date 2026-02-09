@@ -9,9 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import casesData from "@/data/cases.json";
 
 interface CasePageProps {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 }
 
 // Generate static params for all cases
@@ -23,7 +21,8 @@ export async function generateStaticParams() {
 
 // Generate metadata for each case
 export async function generateMetadata({ params }: CasePageProps): Promise<Metadata> {
-  const caseItem = casesData.find(c => c.slug === params.slug);
+  const { slug } = await params;
+  const caseItem = casesData.find(c => c.slug === slug);
   
   if (!caseItem) {
     return {
@@ -37,8 +36,9 @@ export async function generateMetadata({ params }: CasePageProps): Promise<Metad
   };
 }
 
-export default function CasePage({ params }: CasePageProps) {
-  const caseItem = casesData.find(c => c.slug === params.slug);
+export default async function CasePage({ params }: CasePageProps) {
+  const { slug } = await params;
+  const caseItem = casesData.find(c => c.slug === slug);
 
   if (!caseItem) {
     notFound();

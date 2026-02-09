@@ -9,7 +9,7 @@ import Link from "next/link";
 import stedenData from "@/data/steden.json";
 
 interface Props {
-  params: { stad: string };
+  params: Promise<{ stad: string }>;
 }
 
 export async function generateStaticParams() {
@@ -19,7 +19,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const stad = stedenData.find(s => s.slug === params.stad);
+  const { stad: stadSlug } = await params;
+  const stad = stedenData.find(s => s.slug === stadSlug);
   
   if (!stad) {
     return {
@@ -38,8 +39,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function SEOStadPage({ params }: Props) {
-  const stad = stedenData.find(s => s.slug === params.stad);
+export default async function SEOStadPage({ params }: Props) {
+  const { stad: stadSlug } = await params;
+  const stad = stedenData.find(s => s.slug === stadSlug);
 
   if (!stad) {
     return (

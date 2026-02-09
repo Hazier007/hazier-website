@@ -9,7 +9,7 @@ import Link from "next/link";
 import nichesData from "@/data/niches.json";
 
 interface Props {
-  params: { niche: string };
+  params: Promise<{ niche: string }>;
 }
 
 export async function generateStaticParams() {
@@ -19,7 +19,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const niche = nichesData.find(n => n.slug === params.niche);
+  const { niche: nicheSlug } = await params;
+  const niche = nichesData.find(n => n.slug === nicheSlug);
   
   if (!niche) {
     return {
@@ -38,8 +39,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function SEONichePage({ params }: Props) {
-  const niche = nichesData.find(n => n.slug === params.niche);
+export default async function SEONichePage({ params }: Props) {
+  const { niche: nicheSlug } = await params;
+  const niche = nichesData.find(n => n.slug === nicheSlug);
 
   if (!niche) {
     return (
