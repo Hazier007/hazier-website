@@ -6,7 +6,7 @@ const footerNavigation = {
     { name: "SEO", href: "/diensten/seo" },
     { name: "Webdesign", href: "/diensten/webdesign" },
     { name: "Programmatic SEO", href: "/diensten/programmatic-seo" },
-    { name: "Local SEO", href: "/diensten/seo/lokale-seo" },
+    { name: "Local SEO", href: "/diensten/local-seo" },
   ],
   bedrijf: [
     { name: "Over ons", href: "/over-ons" },

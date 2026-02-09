@@ -1,66 +1,47 @@
+"use client";
+
 import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
-import { ScrollStack } from "@/components/ui/ScrollStack";
 import { Section } from "@/components/ui/Section";
 import { Badge } from "@/components/ui/Badge";
-import { Search, Code, Zap, TrendingUp, Globe, Target } from "lucide-react";
+import { Search, Code, Zap, TrendingUp } from "lucide-react";
 
 const services = [
   {
     icon: Search,
     title: "SEO Optimalisatie",
-    description: "Hoger in Google met bewezen SEO strategieën die resultaat leveren.",
-    features: [
-      "Technische SEO audit",
-      "Keyword research & strategy", 
-      "Content optimalisatie",
-      "Link building campagnes",
-      "Local SEO voor lokale bedrijven",
-      "Performance tracking & rapportage"
-    ],
+    description: "Hoger in Google met bewezen strategieën die écht resultaat leveren.",
     href: "/diensten/seo",
     badge: "Meest populair",
-    stats: "+250% gemiddelde groei"
+    stat: "+250%",
+    statLabel: "gemiddelde groei",
+    featured: false,
   },
   {
     icon: Code,
-    title: "Webdesign & Development",
-    description: "Moderne, snelle websites die converteren en indruk maken.",
-    features: [
-      "Responsive design voor alle apparaten",
-      "SEO-vriendelijke ontwikkeling",
-      "Snelle laadtijden (Core Web Vitals)",
-      "CMS integratie (WordPress/Headless)",
-      "E-commerce functionaliteit",
-      "Onderhoud & hosting service"
-    ],
+    title: "Webdesign",
+    description: "Moderne, razendsnelle websites die converteren en indruk maken.",
     href: "/diensten/webdesign",
-    badge: "Volledig op maat",
-    stats: "3.2s gemiddelde laadtijd"
+    badge: "Op maat",
+    stat: "100%",
+    statLabel: "op maat gemaakt",
+    featured: true,
   },
   {
     icon: Zap,
     title: "Programmatic SEO",
-    description: "Automatische generatie van honderden SEO-pagina's voor maximale dekking.",
-    features: [
-      "Geautomatiseerde content generatie",
-      "Schaalbare template systemen",
-      "Data-driven page creation",
-      "Bulk content optimalisatie", 
-      "Long-tail keyword targeting",
-      "Enterprise-level scaling"
-    ],
+    description: "Honderden geoptimaliseerde pagina's automatisch gegenereerd.",
     href: "/diensten/programmatic-seo",
     badge: "Geavanceerd",
-    stats: "500+ pagina's per project"
-  }
+    stat: "500+",
+    statLabel: "pagina's per project",
+    featured: false,
+  },
 ];
 
 export function Services() {
   return (
     <Section size="xl">
-      <div className="text-center mb-16">
+      <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
           Onze <span className="text-accent">Diensten</span>
         </h2>
@@ -69,70 +50,68 @@ export function Services() {
         </p>
       </div>
 
-      <ScrollStack>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {services.map((service, index) => (
-          <Card key={index} className="max-w-4xl mx-auto">
-            <CardHeader className="pb-6">
-              <div className="flex items-start justify-between mb-4">
-                <div className="p-3 bg-accent/10 rounded-xl">
-                  <service.icon className="w-8 h-8 text-accent" />
+          <Link
+            key={index}
+            href={service.href}
+            className={`group relative rounded-2xl p-[1px] transition-all duration-500 ${
+              service.featured ? "md:-mt-4 md:-mb-4" : ""
+            }`}
+          >
+            {/* Gradient border */}
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/0 via-accent/0 to-accent/0 group-hover:from-accent/60 group-hover:via-accent/20 group-hover:to-accent/60 transition-all duration-500 opacity-0 group-hover:opacity-100" />
+
+            {/* Glow effect */}
+            <div className="absolute -inset-1 rounded-2xl bg-accent/0 group-hover:bg-accent/5 blur-xl transition-all duration-500" />
+
+            {/* Card */}
+            <div
+              className={`relative rounded-2xl bg-background-secondary/80 backdrop-blur-sm border border-border group-hover:border-accent/30 p-8 transition-all duration-500 group-hover:scale-[1.02] h-full flex flex-col ${
+                service.featured ? "md:py-12" : ""
+              }`}
+            >
+              {/* Icon with glow */}
+              <div className="relative mb-4">
+                <div className="absolute inset-0 w-14 h-14 bg-accent/0 group-hover:bg-accent/20 rounded-xl blur-lg transition-all duration-500" />
+                <div className="relative w-14 h-14 bg-accent/10 group-hover:bg-accent/20 rounded-xl flex items-center justify-center transition-all duration-300">
+                  <service.icon className="w-7 h-7 text-accent" />
                 </div>
+              </div>
+
+              {/* Badge */}
+              <div className="mb-4">
                 <Badge variant="secondary">{service.badge}</Badge>
               </div>
-              
-              <CardTitle className="text-2xl md:text-3xl mb-2">
+
+              {/* Title & description */}
+              <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors duration-300">
                 {service.title}
-              </CardTitle>
-              
-              <CardDescription className="text-lg">
+              </h3>
+              <p className="text-text-secondary text-sm leading-relaxed mb-6 line-clamp-2">
                 {service.description}
-              </CardDescription>
-            </CardHeader>
+              </p>
 
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-semibold text-foreground mb-4 flex items-center">
-                    <Target className="w-4 h-4 mr-2 text-accent" />
-                    Wat je krijgt:
-                  </h4>
-                  <ul className="space-y-3">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 mr-3 flex-shrink-0" />
-                        <span className="text-text-secondary">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+              {/* Stat */}
+              <div className="mt-auto mb-6 p-4 rounded-xl bg-background/60 border border-border group-hover:border-accent/20 transition-all duration-300">
+                <div className="flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4 text-accent" />
+                  <span className="text-accent font-bold text-lg">{service.stat}</span>
                 </div>
-
-                <div className="space-y-6">
-                  <div className="p-4 bg-background-secondary rounded-lg border border-border">
-                    <div className="flex items-center mb-2">
-                      <TrendingUp className="w-4 h-4 mr-2 text-accent" />
-                      <span className="font-semibold text-foreground">Resultaat</span>
-                    </div>
-                    <p className="text-accent font-bold text-lg">{service.stats}</p>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Button className="flex-1" asChild>
-                      <Link href={service.href}>
-                        Meer info
-                      </Link>
-                    </Button>
-                    <Button variant="outline" className="flex-1" asChild>
-                      <Link href="/contact">
-                        Offerte aanvragen
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
+                <span className="text-text-secondary text-xs">{service.statLabel}</span>
               </div>
-            </CardContent>
-          </Card>
+
+              {/* CTA */}
+              <div className="flex items-center text-accent font-medium text-sm group-hover:translate-x-1 transition-transform duration-300">
+                Meer info
+                <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </Link>
         ))}
-      </ScrollStack>
+      </div>
     </Section>
   );
 }
