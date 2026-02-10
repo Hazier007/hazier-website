@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import { ScrollStack, ScrollStackItem } from "@/components/ui/ScrollStack";
 import { Section } from "@/components/ui/Section";
 import { Badge } from "@/components/ui/Badge";
 import { Search, Code, Zap, TrendingUp, Target } from "lucide-react";
@@ -71,10 +70,23 @@ export function Services() {
         </p>
       </div>
 
-      <ScrollStack useWindowScroll={true} itemDistance={200} itemStackDistance={30} baseScale={0.85}>
+      <div className="relative max-w-4xl mx-auto">
         {services.map((service, index) => (
-          <ScrollStackItem key={index}>
-            <Card className="max-w-4xl mx-auto">
+          <div
+            key={index}
+            className="sticky mb-8 last:mb-0"
+            style={{
+              top: `${80 + index * 20}px`,
+              zIndex: index + 1,
+            }}
+          >
+            <Card
+              className="shadow-2xl transition-shadow duration-300"
+              style={{
+                transform: `scale(${1 - index * 0.02})`,
+                transformOrigin: 'top center',
+              }}
+            >
               <CardHeader className="pb-6">
                 <div className="flex items-start justify-between mb-4">
                   <div className="p-3 bg-accent/10 rounded-xl">
@@ -134,9 +146,9 @@ export function Services() {
                 </div>
               </CardContent>
             </Card>
-          </ScrollStackItem>
+          </div>
         ))}
-      </ScrollStack>
+      </div>
     </Section>
   );
 }
