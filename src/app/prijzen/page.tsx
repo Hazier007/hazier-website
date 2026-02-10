@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import pakkettenData from "@/data/pakketten.json";
+import { StripeCheckout } from "@/components/StripeCheckout";
 
 export const metadata: Metadata = {
   title: "Prijzen & Pakketten | Hazier - Transparante SEO & Web Tarieven",
@@ -88,15 +89,18 @@ export default function PrijzenPage() {
                       ))}
                     </ul>
 
-                    <Button 
-                      className={`w-full ${pakket.populair ? 'bg-accent hover:bg-accent/90' : ''}`} 
-                      variant={pakket.populair ? 'primary' : 'outline'}
-                      asChild
-                    >
-                      <a href={pakket.contact_required ? "/contact" : "/contact"}>
-                        {pakket.contact_required ? "Contact Opnemen" : "Pakket Kiezen"}
-                      </a>
-                    </Button>
+                    {pakket.contact_required ? (
+                      <Button className="w-full" variant="outline" asChild>
+                        <a href="/contact">Contact Opnemen</a>
+                      </Button>
+                    ) : (
+                      <StripeCheckout
+                        priceId={`price_seo_${pakket.naam.toLowerCase().replace(/\s+/g, '_')}_PLACEHOLDER`}
+                        pakketNaam={`SEO - ${pakket.naam}`}
+                        popular={pakket.populair}
+                        label="Bestellen"
+                      />
+                    )}
                   </CardContent>
                 </Card>
               ))}
@@ -148,13 +152,12 @@ export default function PrijzenPage() {
                       ))}
                     </ul>
 
-                    <Button 
-                      className={`w-full ${pakket.populair ? 'bg-accent hover:bg-accent/90' : ''}`} 
-                      variant={pakket.populair ? 'primary' : 'outline'}
-                      asChild
-                    >
-                      <a href="/contact">Pakket Kiezen</a>
-                    </Button>
+                    <StripeCheckout
+                      priceId={`price_web_${pakket.naam.toLowerCase().replace(/\s+/g, '_')}_PLACEHOLDER`}
+                      pakketNaam={`Webdesign - ${pakket.naam}`}
+                      popular={pakket.populair}
+                      label="Bestellen"
+                    />
                   </CardContent>
                 </Card>
               ))}
@@ -203,13 +206,12 @@ export default function PrijzenPage() {
                       ))}
                     </ul>
 
-                    <Button 
-                      className={`w-full ${pakket.populair ? 'bg-accent hover:bg-accent/90' : ''}`} 
-                      variant={pakket.populair ? 'primary' : 'outline'}
-                      asChild
-                    >
-                      <a href="/contact">Pakket Kiezen</a>
-                    </Button>
+                    <StripeCheckout
+                      priceId={`price_link_${pakket.naam.toLowerCase().replace(/\s+/g, '_')}_PLACEHOLDER`}
+                      pakketNaam={`Linkbuilding - ${pakket.naam}`}
+                      popular={pakket.populair}
+                      label="Bestellen"
+                    />
                   </CardContent>
                 </Card>
               ))}

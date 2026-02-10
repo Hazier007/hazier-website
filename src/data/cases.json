@@ -4,34 +4,37 @@
     "titel": "OVL Slotenmaker",
     "website": "ovl-slotenmaker.be",
     "klant": "Kristof",
-    "type": "Rank & Rent",
-    "services": ["SEO", "Local SEO", "Rank & Rent"],
+    "type": "Webdesign & SEO",
+    "services": ["Webdesign", "SEO", "Programmatic SEO", "Chatbot"],
     "resultaten": {
-      "traffic": "+450% organisch verkeer",
-      "keywords": "25+ top 3 posities",
-      "conversies": "€3.500+ maandelijkse leads"
+      "traffic": "378 clicks/maand, 29.188 impressions",
+      "ctr": "CTR gestegen van 0.8% naar 1.3%",
+      "positie": "Gemiddelde positie verbeterd: 27.2 \u2192 19.8",
+      "paginas": "534 programmatic pagina's gebouwd",
+      "leads": "Chatbot voor leadgeneratie"
     },
-    "beschrijving": "Complete rank & rent strategie voor slotenmaker services in Oost-Vlaanderen. Van 0 naar marktleider in lokale zoekresultaten.",
+    "beschrijving": "Complete website en SEO-strategie voor slotenmaker services in Oost-Vlaanderen. 534 programmatic pagina's, chatbot voor leadgeneratie en sterke groei in organisch verkeer.",
     "timeline": "6 maanden",
     "screenshot": "/images/cases/ovl-slotenmaker.jpg",
-    "tags": ["Local SEO", "Lead Generation", "Rank & Rent"]
+    "tags": ["Webdesign", "SEO", "Programmatic SEO", "Chatbot", "Lead Generation"]
   },
   {
     "slug": "security-tools",
     "titel": "Security Tools",
     "website": "security-tools.be",
-    "klant": "Kristof", 
+    "klant": "Kristof",
     "type": "E-commerce SEO",
     "services": ["SEO", "E-commerce", "Content Marketing"],
     "resultaten": {
-      "traffic": "+280% organisch verkeer",
-      "omzet": "+150% online verkopen",
-      "keywords": "50+ commerciële keywords top 10"
+      "traffic": "320 clicks/maand, 15.518 impressions",
+      "ctr": "CTR verdubbeld: 1.0% \u2192 2.1%",
+      "positie": "Gemiddelde positie: 29.2 \u2192 17.8",
+      "talen": "Meertalig verkeer (NL + FR)"
     },
-    "beschrijving": "E-commerce SEO optimalisatie voor veiligheidsequipment. Focus op product pages en commerciële zoekintentie.",
+    "beschrijving": "E-commerce SEO optimalisatie voor veiligheidsequipment. CTR verdubbeld en sterke positieverbetering in zowel Nederlandse als Franse zoekresultaten.",
     "timeline": "8 maanden",
     "screenshot": "/images/cases/security-tools.jpg",
-    "tags": ["E-commerce", "Product SEO", "Commercial Keywords"]
+    "tags": ["E-commerce", "Product SEO", "Meertalig", "Commercial Keywords"]
   },
   {
     "slug": "techno-preventie",
@@ -39,33 +42,33 @@
     "website": "techno-preventie.be",
     "klant": "Kristof",
     "type": "Local SEO",
-    "services": ["Local SEO", "GMB Optimalisatie", "Citations"],
+    "services": ["Local SEO", "Content Marketing", "Technical SEO"],
     "resultaten": {
-      "gmb": "4.8★ beoordeling (45+ reviews)",
-      "local": "Top 3 in local pack voor 15+ termen",
-      "calls": "+200% telefonische leads"
+      "traffic": "217 clicks/maand, 38.937 impressions",
+      "ctr": "CTR verdubbeld: 0.3% \u2192 0.6%",
+      "stabiliteit": "Clicks stabiel ondanks Google algoritme updates"
     },
-    "beschrijving": "Local SEO campagne voor preventiediensten. Google My Business optimalisatie en lokale zichtbaarheid.",
+    "beschrijving": "SEO-campagne voor preventiediensten. Hoge impressies en stabiele clicks, zelfs tijdens Google algoritme updates. CTR verdubbeld door content-optimalisatie.",
     "timeline": "4 maanden",
     "screenshot": "/images/cases/techno-preventie.jpg",
-    "tags": ["Local SEO", "GMB", "Service Business"]
+    "tags": ["Local SEO", "Algoritme-proof", "Service Business"]
   },
   {
     "slug": "huisartsenvoortman",
     "titel": "Huisartsen Voortman",
     "website": "huisartsenvoortman.be",
     "klant": "Dr. Voortman",
-    "type": "Medical Practice",
+    "type": "Webdesign",
     "services": ["Webdesign", "Local SEO", "GDPR Compliance"],
     "resultaten": {
-      "patienten": "+35% nieuwe patiënten",
-      "afspraken": "Online afspraken systeem",
+      "design": "Volledig custom design",
+      "seo": "Lokale SEO geoptimaliseerd",
       "compliance": "100% GDPR compliant"
     },
-    "beschrijving": "Moderne website voor huisartsenpraktijk met patiëntportaal en online afspraken. GDPR-compliant en gebruiksvriendelijk.",
+    "beschrijving": "Moderne website voor huisartsenpraktijk met pati\u00ebntportaal en online afspraken. GDPR-compliant en gebruiksvriendelijk.",
     "timeline": "3 maanden",
     "screenshot": "/images/cases/huisartsenvoortman.jpg",
-    "tags": ["Healthcare", "GDPR", "Patient Portal"]
+    "tags": ["Webdesign", "Healthcare", "GDPR"]
   },
   {
     "slug": "btw-calculator",
@@ -75,14 +78,14 @@
     "type": "Tool Site",
     "services": ["Webdesign", "SEO", "Tool Development"],
     "resultaten": {
-      "users": "10.000+ maandelijke gebruikers",
-      "traffic": "Rank #1 voor 'btw calculator'",
-      "engagement": "85% terugkerende bezoekers"
+      "ranking": "Top posities voor BTW-gerelateerde zoekopdrachten",
+      "engagement": "Hoge terugkeergraad",
+      "nut": "Dagelijks gebruikt door ondernemers en boekhouders"
     },
-    "beschrijving": "Online BTW calculator tool met SEO optimalisatie. Simpel, snel en accuraat voor Belgische ondernemers.",
+    "beschrijving": "Online BTW calculator tool met SEO-optimalisatie. Simpel, snel en accuraat voor Belgische ondernemers.",
     "timeline": "2 maanden",
     "screenshot": "/images/cases/btw-calculator.jpg",
-    "tags": ["Tool Development", "Utility Site", "High Traffic"]
+    "tags": ["Tool Development", "Utility Site", "SEO"]
   },
   {
     "slug": "loonberekening",
@@ -92,14 +95,14 @@
     "type": "Calculator Tool",
     "services": ["Tool Development", "SEO", "User Experience"],
     "resultaten": {
-      "traffic": "15.000+ maandelijke bezoekers",
-      "keywords": "Top 3 voor 'loon berekenen'",
-      "conversies": "25% conversion naar leads"
+      "ranking": "Top posities voor loonberekening keywords",
+      "engagement": "Hoog gebruiksgemak en terugkeerpercentage",
+      "nut": "Populaire tool voor werkgevers en werknemers"
     },
     "beschrijving": "Geavanceerde loonberekeningtool voor Belgische werkgevers en werknemers. Inclusief alle sociale bijdragen.",
     "timeline": "3 maanden",
     "screenshot": "/images/cases/loonberekening.jpg",
-    "tags": ["HR Tools", "Belgium Specific", "Lead Generation"]
+    "tags": ["HR Tools", "Belgium Specific", "Calculator"]
   },
   {
     "slug": "interesten",
@@ -109,9 +112,9 @@
     "type": "Financial Tool",
     "services": ["Tool Development", "Financial Calculations", "SEO"],
     "resultaten": {
-      "users": "8.000+ unieke bezoekers/maand",
-      "accuracy": "100% accurate berekeningen",
-      "ranking": "#1 voor 'interesten berekenen'"
+      "ranking": "Goede posities voor interesten-gerelateerde zoektermen",
+      "accuracy": "100% accurate berekeningen conform Belgische wetgeving",
+      "nut": "Gebruikt door particulieren en professionals"
     },
     "beschrijving": "Online interessenberekening tool voor leningen, kredieten en investeringen. Belgische wetgeving conform.",
     "timeline": "2 maanden",
@@ -123,17 +126,17 @@
     "titel": "Collect Pro",
     "website": "collectpro.be",
     "klant": "Collect Pro",
-    "type": "SaaS Platform",
-    "services": ["Webdesign", "SaaS Marketing", "Conversion Optimization"],
+    "type": "Webdesign & SEO",
+    "services": ["Webdesign", "SEO", "B2B Marketing"],
     "resultaten": {
-      "signups": "+300% aanmeldingen",
-      "conversion": "15% trial-to-paid conversie",
-      "mrr": "€25.000+ MRR bereikt"
+      "traffic": "46 clicks/maand, 2.940 impressions",
+      "branding": "Branded keywords #1 in Google",
+      "platform": "Professioneel B2B incassoplatform"
     },
-    "beschrijving": "Complete website redesign voor debt collection SaaS. Focus op enterprise klanten en trust indicators.",
-    "timeline": "6 maanden",
+    "beschrijving": "Professionele website voor B2B incassoplatform. Focus op vertrouwen, branded zoekwoorden en een clean, professionele uitstraling voor enterprise klanten.",
+    "timeline": "4 maanden",
     "screenshot": "/images/cases/collectpro.jpg",
-    "tags": ["SaaS", "B2B", "Enterprise"]
+    "tags": ["Webdesign", "B2B", "Incasso", "Branding"]
   },
   {
     "slug": "poxy-programmatic",
@@ -143,11 +146,11 @@
     "type": "Programmatic SEO",
     "services": ["Programmatic SEO", "Content Generation", "Technical SEO"],
     "resultaten": {
-      "pages": "1.000+ automatisch gegenereerde pagina's",
-      "traffic": "+800% organisch verkeer",
-      "keywords": "500+ long-tail rankings"
+      "paginas": "1.100+ programmatic pagina's",
+      "structuur": "8 diensten \u00d7 135 locaties",
+      "dekking": "Volledige lokale dekking in Belgi\u00eb"
     },
-    "beschrijving": "Grootschalige programmatic SEO implementatie. Automatische content generatie en structuratie voor maximale coverage.",
+    "beschrijving": "Grootschalige programmatic SEO: 1.100+ pagina's automatisch gegenereerd voor 8 diensten in 135 locaties. Maximale lokale dekking.",
     "timeline": "4 maanden",
     "screenshot": "/images/cases/poxy.jpg",
     "tags": ["Programmatic SEO", "Automation", "Scale"]
@@ -160,11 +163,11 @@
     "type": "Health Tool",
     "services": ["Health Tool", "SEO", "User Experience"],
     "resultaten": {
-      "users": "12.000+ aanstaande moeders/maand",
-      "engagement": "90% completion rate",
-      "medical": "Medisch accurate informatie"
+      "ranking": "Goede posities voor zwangerschap-gerelateerde zoektermen",
+      "engagement": "Hoge completion rate",
+      "nut": "Medisch accurate informatie voor aanstaande ouders"
     },
-    "beschrijving": "Zwangerschapscalculator met wekelijkse updates en medische informatie. Vertrouwd door duizenden aanstaande ouders.",
+    "beschrijving": "Zwangerschapscalculator met wekelijkse updates en medische informatie. Vertrouwd door aanstaande ouders in Belgi\u00eb.",
     "timeline": "3 maanden",
     "screenshot": "/images/cases/zwangerschapscalculator.jpg",
     "tags": ["Healthcare", "Pregnancy", "Medical Tool"]
