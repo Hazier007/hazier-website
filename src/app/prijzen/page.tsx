@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import pakkettenData from "@/data/pakketten.json";
 import { StripeCheckout } from "@/components/StripeCheckout";
+import { getStripePriceId } from "@/lib/stripe/prices";
 
 export const metadata: Metadata = {
   title: "Prijzen & Pakketten | Hazier - Transparante SEO & Web Tarieven",
@@ -95,7 +96,8 @@ export default function PrijzenPage() {
                       </Button>
                     ) : (
                       <StripeCheckout
-                        priceId={`price_seo_${pakket.naam.toLowerCase().replace(/\s+/g, '_')}_PLACEHOLDER`}
+                        priceId={getStripePriceId(pakket.stripe_price_id)}
+                        mode={pakket.periode === "maand" ? "subscription" : "payment"}
                         pakketNaam={`SEO - ${pakket.naam}`}
                         popular={pakket.populair}
                         label="Bestellen"
@@ -153,7 +155,8 @@ export default function PrijzenPage() {
                     </ul>
 
                     <StripeCheckout
-                      priceId={`price_web_${pakket.naam.toLowerCase().replace(/\s+/g, '_')}_PLACEHOLDER`}
+                      priceId={getStripePriceId(pakket.stripe_price_id)}
+                      mode={pakket.periode === "maand" ? "subscription" : "payment"}
                       pakketNaam={`Webdesign - ${pakket.naam}`}
                       popular={pakket.populair}
                       label="Bestellen"
@@ -207,7 +210,8 @@ export default function PrijzenPage() {
                     </ul>
 
                     <StripeCheckout
-                      priceId={`price_link_${pakket.naam.toLowerCase().replace(/\s+/g, '_')}_PLACEHOLDER`}
+                      priceId={getStripePriceId(pakket.stripe_price_id)}
+                      mode={pakket.periode === "maand" ? "subscription" : "payment"}
                       pakketNaam={`Linkbuilding - ${pakket.naam}`}
                       popular={pakket.populair}
                       label="Bestellen"

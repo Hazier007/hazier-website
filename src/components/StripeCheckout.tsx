@@ -3,23 +3,28 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 
+type CheckoutMode = "payment" | "subscription";
+
 interface StripeCheckoutProps {
-  priceId: string;
+  priceId?: string;
+  mode: CheckoutMode;
   pakketNaam: string;
   popular?: boolean;
   label?: string;
 }
 
-export function StripeCheckout({ priceId, pakketNaam, popular, label }: StripeCheckoutProps) {
+export function StripeCheckout({ priceId, mode, pakketNaam, popular, label }: StripeCheckoutProps) {
   const [loading, setLoading] = useState(false);
 
   const handleCheckout = async () => {
+    if (!priceId) return;
+
     setLoading(true);
     try {
       const response = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ priceId, pakketNaam }),
+        body: JSON.stringify({ priceId, mode, pakketNaam }),
       });
 
       const data = await response.json();
@@ -41,9 +46,10 @@ export function StripeCheckout({ priceId, pakketNaam, popular, label }: StripeCh
       className={`w-full ${popular ? "bg-accent hover:bg-accent/90" : ""}`}
       variant={popular ? "primary" : "outline"}
       onClick={handleCheckout}
-      disabled={loading}
+      disabled={loading || !priceId}
+      title={!priceId ? "Stripe priceId ontbreekt (env vars nog niet gezet)" : undefined}
     >
-      {loading ? "Laden..." : label || "Bestellen"}
+      {loading ? "Laden..." : !priceId ? "Setup nodig" : label || "Bestellen"}
     </Button>
   );
 }
