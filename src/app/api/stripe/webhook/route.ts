@@ -39,7 +39,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
   }
 
-  // Minimal handling for now. Later: persist customer/subscription state in DB/CRM.
   try {
     switch (event.type) {
       case "checkout.session.completed": {
@@ -48,25 +47,56 @@ export async function POST(req: NextRequest) {
           id: session.id,
           mode: session.mode,
           customer: session.customer,
-          client_reference_id: session.client_reference_id,
-          metadata: session.metadata,
+          customerEmail: session.customer_details?.email,
+          pakket: session.metadata?.pakket,
+          amountTotal: session.amount_total,
+        });
+
+        // TODO: Send confirmation email via Resend/Postmark/SendGrid
+        // TODO: Create record in CRM/Notion
+        // TODO: Notify team via Slack webhook
+        break;
+      }
+
+      case "invoice.paid": {
+        const invoice = event.data.object as Stripe.Invoice;
+        console.log("invoice.paid", {
+          id: invoice.id,
+          customer: invoice.customer,
+          amountPaid: invoice.amount_paid,
+          billingReason: invoice.billing_reason,
         });
         break;
       }
-      case "invoice.paid": {
+
+      case "invoice.payment_failed": {
         const invoice = event.data.object as Stripe.Invoice;
-        console.log("invoice.paid", { id: invoice.id, customer: invoice.customer });
+        console.log("invoice.payment_failed", {
+          id: invoice.id,
+          customer: invoice.customer,
+          attemptCount: invoice.attempt_count,
+        });
+
+        // TODO: Send dunning email to customer
         break;
       }
+
       case "customer.subscription.created":
       case "customer.subscription.updated":
       case "customer.subscription.deleted": {
         const sub = event.data.object as Stripe.Subscription;
-        console.log(event.type, { id: sub.id, customer: sub.customer, status: sub.status });
+        console.log(event.type, {
+          id: sub.id,
+          customer: sub.customer,
+          status: sub.status,
+          cancelAtPeriodEnd: sub.cancel_at_period_end,
+        });
+
+        // TODO: Update subscription status in DB/CRM
         break;
       }
+
       default:
-        // ignore
         break;
     }
   } catch (err) {

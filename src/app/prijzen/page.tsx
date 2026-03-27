@@ -245,9 +245,21 @@ export default function PrijzenPage() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-0">
-                    <CardDescription className="text-text-secondary text-sm">
+                    <CardDescription className="text-text-secondary text-sm mb-4">
                       {addon.beschrijving}
                     </CardDescription>
+                    {addon.stripe_price_id ? (
+                      <StripeCheckout
+                        priceId={getStripePriceId(addon.stripe_price_id)}
+                        mode="payment"
+                        pakketNaam={`Add-on - ${addon.naam}`}
+                        label="Bestellen"
+                      />
+                    ) : (
+                      <Button className="w-full" variant="outline" asChild>
+                        <a href="/contact">Contact Opnemen</a>
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}

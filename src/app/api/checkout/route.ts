@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
 
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://hazier.be";
 
-    const session = await stripe.checkout.sessions.create({
+    const sessionParams: Stripe.Checkout.SessionCreateParams = {
       mode,
       payment_method_types: ["card", "bancontact", "ideal"],
       line_items: [{ price: priceId, quantity: 1 }],
@@ -39,15 +39,24 @@ export async function POST(request: NextRequest) {
       tax_id_collection: { enabled: true },
       billing_address_collection: "required",
 
-      // Allow business details on invoices
+      // Always create a customer for future reference
       customer_creation: mode === "payment" ? "always" : undefined,
+
+      // Generate invoice for one-time payments too
+      ...(mode === "payment" && {
+        invoice_creation: {
+          enabled: true,
+        },
+      }),
 
       success_url: `${baseUrl}/intake?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${baseUrl}/prijzen`,
       metadata: {
         pakket: pakketNaam || "",
       },
-    });
+    };
+
+    const session = await stripe.checkout.sessions.create(sessionParams);
 
     return NextResponse.json({ url: session.url });
   } catch (error) {

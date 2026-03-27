@@ -8,7 +8,11 @@ export type StripePriceKey =
   | "price_webdesign_onderhoud"
   | "price_linkbuilding_starter"
   | "price_linkbuilding_growth"
-  | "price_linkbuilding_authority";
+  | "price_linkbuilding_authority"
+  | "price_addon_copywriting"
+  | "price_addon_logo"
+  | "price_addon_fotografie"
+  | "price_addon_google_ads";
 
 function readEnv(key: string): string | undefined {
   const v = process.env[key];
@@ -46,6 +50,15 @@ export function getStripePriceId(key: string): string | undefined {
       return readEnv("NEXT_PUBLIC_STRIPE_PRICE_ID_LINKBUILDING_GROWTH");
     case "price_linkbuilding_authority":
       return readEnv("NEXT_PUBLIC_STRIPE_PRICE_ID_LINKBUILDING_AUTHORITY");
+
+    case "price_addon_copywriting":
+      return readEnv("NEXT_PUBLIC_STRIPE_PRICE_ID_ADDON_COPYWRITING");
+    case "price_addon_logo":
+      return readEnv("NEXT_PUBLIC_STRIPE_PRICE_ID_ADDON_LOGO");
+    case "price_addon_fotografie":
+      return readEnv("NEXT_PUBLIC_STRIPE_PRICE_ID_ADDON_FOTOGRAFIE");
+    case "price_addon_google_ads":
+      return readEnv("NEXT_PUBLIC_STRIPE_PRICE_ID_ADDON_GOOGLE_ADS");
 
     default:
       return undefined;

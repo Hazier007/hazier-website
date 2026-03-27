@@ -6,23 +6,23 @@ import { Card } from "@/components/ui/Card";
 
 type Props = {
   checkoutSessionId?: string;
+  defaultName?: string;
+  defaultEmail?: string;
 };
 
-export function IntakeForm({ checkoutSessionId }: Props) {
+export function IntakeForm({ checkoutSessionId, defaultName, defaultEmail }: Props) {
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
 
   const [form, setForm] = useState({
-    name: "",
-    email: "",
+    name: defaultName ?? "",
+    email: defaultEmail ?? "",
     company: "",
     vat: "",
     website: "",
     goals: "",
     notes: "",
   });
-
-  // checkoutSessionId is optional and only used for matching intake -> payment.
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

@@ -15,11 +15,14 @@ interface StripeCheckoutProps {
 
 export function StripeCheckout({ priceId, mode, pakketNaam, popular, label }: StripeCheckoutProps) {
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleCheckout = async () => {
     if (!priceId) return;
 
     setLoading(true);
+    setError(null);
+
     try {
       const response = await fetch("/api/checkout", {
         method: "POST",
@@ -27,29 +30,42 @@ export function StripeCheckout({ priceId, mode, pakketNaam, popular, label }: St
         body: JSON.stringify({ priceId, mode, pakketNaam }),
       });
 
+      if (!response.ok) {
+        const data = await response.json().catch(() => null);
+        throw new Error(data?.error || `Server error (${response.status})`);
+      }
+
       const data = await response.json();
 
       if (data.url) {
         window.location.href = data.url;
       } else {
-        alert("Er ging iets mis. Probeer het opnieuw of neem contact op.");
+        throw new Error("Geen checkout URL ontvangen");
       }
-    } catch {
-      alert("Er ging iets mis. Probeer het opnieuw of neem contact op.");
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Onbekende fout";
+      setError(message);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <Button
-      className={`w-full ${popular ? "bg-accent hover:bg-accent/90" : ""}`}
-      variant={popular ? "primary" : "outline"}
-      onClick={handleCheckout}
-      disabled={loading || !priceId}
-      title={!priceId ? "Stripe priceId ontbreekt (env vars nog niet gezet)" : undefined}
-    >
-      {loading ? "Laden..." : !priceId ? "Setup nodig" : label || "Bestellen"}
-    </Button>
+    <div>
+      <Button
+        className={`w-full ${popular ? "bg-accent hover:bg-accent/90" : ""}`}
+        variant={popular ? "primary" : "outline"}
+        onClick={handleCheckout}
+        disabled={loading || !priceId}
+        title={!priceId ? "Stripe priceId ontbreekt (env vars nog niet gezet)" : undefined}
+      >
+        {loading ? "Laden..." : !priceId ? "Setup nodig" : label || "Bestellen"}
+      </Button>
+      {error && (
+        <p className="mt-2 text-sm text-red-400 text-center">
+          {error} — Neem <a href="mailto:info@hazier.be" className="underline">contact</a> op als dit aanhoudt.
+        </p>
+      )}
+    </div>
   );
 }

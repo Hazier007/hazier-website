@@ -195,25 +195,29 @@
       "naam": "Copywriting",
       "prijs": 150,
       "periode": "per pagina",
-      "beschrijving": "Professionele teksten die converteren"
+      "beschrijving": "Professionele teksten die converteren",
+      "stripe_price_id": "price_addon_copywriting"
     },
     {
-      "naam": "Logo Design", 
+      "naam": "Logo Design",
       "prijs": 297,
       "periode": "eenmalig",
-      "beschrijving": "Uniek logo ontwerp inclusief variaties"
+      "beschrijving": "Uniek logo ontwerp inclusief variaties",
+      "stripe_price_id": "price_addon_logo"
     },
     {
       "naam": "Content Fotografie",
       "prijs": 497,
       "periode": "dag",
-      "beschrijving": "Professionele bedrijfsfotografie op locatie"
+      "beschrijving": "Professionele bedrijfsfotografie op locatie",
+      "stripe_price_id": "price_addon_fotografie"
     },
     {
       "naam": "Google Ads Setup",
       "prijs": 397,
-      "periode": "eenmalig", 
-      "beschrijving": "Professionele Google Ads campagne opzet"
+      "periode": "eenmalig",
+      "beschrijving": "Professionele Google Ads campagne opzet",
+      "stripe_price_id": "price_addon_google_ads"
     }
   ]
 }
