@@ -5,6 +5,7 @@ import { SocialProofBar } from "@/components/sections/SocialProofBar";
 import { Services } from "@/components/sections/Services";
 import { Cases } from "@/components/sections/Cases";
 import { WhyHazier } from "@/components/sections/WhyHazier";
+import { FAQ } from "@/components/sections/FAQ";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { PricingPreview } from "@/components/sections/PricingPreview";
 import { CTASection } from "@/components/sections/CTASection";
@@ -20,6 +21,7 @@ export default function Home() {
         <Services />
         <Cases />
         <WhyHazier />
+        <FAQ />
         <Testimonials />
         <PricingPreview />
         <CTASection />
