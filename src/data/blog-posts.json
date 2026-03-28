@@ -1,0 +1,482 @@
+[
+  {
+    "slug": "wat-is-seo",
+    "titel": "Wat is SEO? De Complete Gids voor Beginners (2025)",
+    "categorie": "seo-basics",
+    "beschrijving": "Leer alles over SEO: hoe zoekmachines werken, waarom SEO belangrijk is en hoe je ermee start. Inclusief praktische tips.",
+    "keywords": ["wat is seo", "seo uitleg", "seo beginners", "zoekmachine optimalisatie"],
+    "internalLinks": ["/diensten/seo", "/seo-check"]
+  },
+  {
+    "slug": "seo-tips-kleine-bedrijven",
+    "titel": "15 SEO Tips voor Kleine Bedrijven die Direct Werken",
+    "categorie": "seo-basics",
+    "beschrijving": "Praktische SEO tips die kleine bedrijven zelf kunnen toepassen voor meer zichtbaarheid in Google.",
+    "keywords": ["seo tips", "seo kleine bedrijven", "seo zelf doen", "google tips"],
+    "internalLinks": ["/diensten/seo", "/prijzen"]
+  },
+  {
+    "slug": "technische-seo-checklist",
+    "titel": "Technische SEO Checklist: 30 Punten voor een Gezonde Website",
+    "categorie": "technische-seo",
+    "beschrijving": "Complete technische SEO checklist. Van site speed tot structured data — alles wat je moet controleren.",
+    "keywords": ["technische seo", "seo checklist", "website audit", "seo controle"],
+    "internalLinks": ["/diensten/seo", "/seo-check"]
+  },
+  {
+    "slug": "google-ranking-factoren",
+    "titel": "Google Ranking Factoren: Wat Telt Echt in 2025?",
+    "categorie": "seo-basics",
+    "beschrijving": "Ontdek welke factoren Google echt belangrijk vindt bij het ranken van websites. Gebaseerd op de laatste updates.",
+    "keywords": ["google ranking factoren", "google algoritme", "seo factoren", "hoger in google"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "keyword-research-handleiding",
+    "titel": "Keyword Research: Stap-voor-Stap Handleiding",
+    "categorie": "seo-basics",
+    "beschrijving": "Leer hoe je de juiste zoekwoorden vindt voor jouw bedrijf. Gratis en betaalde tools, zoekintentie en meer.",
+    "keywords": ["keyword research", "zoekwoorden onderzoek", "seo keywords", "zoekintentie"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "on-page-seo-gids",
+    "titel": "On-Page SEO: De Complete Gids voor Perfecte Pagina's",
+    "categorie": "technische-seo",
+    "beschrijving": "Alles over on-page SEO: title tags, meta descriptions, headings, interne links, alt-teksten en meer.",
+    "keywords": ["on-page seo", "meta tags", "title tag", "seo optimalisatie pagina"],
+    "internalLinks": ["/diensten/seo", "/seo-check"]
+  },
+  {
+    "slug": "local-seo-gids-belgie",
+    "titel": "Local SEO in België: De Ultieme Gids voor Lokale Bedrijven",
+    "categorie": "local-seo",
+    "beschrijving": "Alles over local SEO in België. Google Business Profile, lokale zoekwoorden, reviews en citation building.",
+    "keywords": ["local seo", "local seo belgie", "google business profile", "lokale seo"],
+    "internalLinks": ["/diensten/local-seo"]
+  },
+  {
+    "slug": "google-business-profile-optimaliseren",
+    "titel": "Google Business Profile Optimaliseren: Complete Gids",
+    "categorie": "local-seo",
+    "beschrijving": "Stap-voor-stap je Google Business Profile optimaliseren voor meer lokale klanten en betere Maps rankings.",
+    "keywords": ["google business profile", "google mijn bedrijf", "google maps ranking", "gbp optimaliseren"],
+    "internalLinks": ["/diensten/local-seo"]
+  },
+  {
+    "slug": "google-reviews-krijgen",
+    "titel": "Meer Google Reviews Krijgen: 10 Bewezen Strategieën",
+    "categorie": "local-seo",
+    "beschrijving": "Praktische manieren om meer positieve Google reviews te verzamelen zonder regels te overtreden.",
+    "keywords": ["google reviews", "meer reviews", "review strategie", "online reputatie"],
+    "internalLinks": ["/diensten/local-seo"]
+  },
+  {
+    "slug": "linkbuilding-beginners",
+    "titel": "Linkbuilding voor Beginners: Wat, Waarom en Hoe",
+    "categorie": "linkbuilding",
+    "beschrijving": "Wat is linkbuilding? Waarom zijn backlinks belangrijk? En hoe krijg je kwalitatieve links naar je website?",
+    "keywords": ["linkbuilding", "backlinks", "link building beginners", "backlinks krijgen"],
+    "internalLinks": ["/diensten/seo", "/prijzen"]
+  },
+  {
+    "slug": "backlinks-controleren",
+    "titel": "Backlinks Controleren: Gratis Tools en Methoden",
+    "categorie": "linkbuilding",
+    "beschrijving": "Leer hoe je jouw backlink profiel analyseert met gratis tools. Ontdek toxische links en kansen.",
+    "keywords": ["backlinks controleren", "backlink checker", "link profiel", "toxische links"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "gastbloggen-linkbuilding",
+    "titel": "Gastbloggen als Linkbuilding Strategie: De Complete Gids",
+    "categorie": "linkbuilding",
+    "beschrijving": "Hoe gebruik je gastbloggen effectief voor linkbuilding? Tips, outreach templates en do's & don'ts.",
+    "keywords": ["gastbloggen", "guest posting", "linkbuilding strategie", "outreach"],
+    "internalLinks": ["/diensten/seo", "/prijzen"]
+  },
+  {
+    "slug": "website-snelheid-verbeteren",
+    "titel": "Website Snelheid Verbeteren: 12 Tips voor Snellere Laadtijden",
+    "categorie": "technische-seo",
+    "beschrijving": "Praktische tips om je website sneller te maken. Van afbeelding compressie tot caching en CDN.",
+    "keywords": ["website snelheid", "pagespeed", "laadtijd verbeteren", "core web vitals"],
+    "internalLinks": ["/diensten/webdesign", "/seo-check"]
+  },
+  {
+    "slug": "core-web-vitals-uitleg",
+    "titel": "Core Web Vitals Uitleg: LCP, FID, CLS en INP",
+    "categorie": "technische-seo",
+    "beschrijving": "Wat zijn Core Web Vitals? Leer alles over LCP, FID, CLS en INP — en hoe je ze verbetert.",
+    "keywords": ["core web vitals", "lcp", "cls", "inp", "pagespeed"],
+    "internalLinks": ["/diensten/webdesign", "/seo-check"]
+  },
+  {
+    "slug": "structured-data-schema-markup",
+    "titel": "Structured Data & Schema Markup: Rich Snippets Krijgen",
+    "categorie": "technische-seo",
+    "beschrijving": "Leer hoe je structured data toevoegt aan je website voor rich snippets in Google zoekresultaten.",
+    "keywords": ["structured data", "schema markup", "rich snippets", "json-ld"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "seo-content-schrijven",
+    "titel": "SEO Content Schrijven: 10 Tips voor Teksten die Ranken",
+    "categorie": "content-marketing",
+    "beschrijving": "Hoe schrijf je content die zowel Google als je bezoekers aanspreekt? Praktische schrijftips.",
+    "keywords": ["seo content", "seo teksten schrijven", "content marketing", "seo copywriting"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "blog-beginnen-bedrijf",
+    "titel": "Blog Starten voor je Bedrijf: Waarom en Hoe",
+    "categorie": "content-marketing",
+    "beschrijving": "Waarom een blog starten voor je bedrijf? Hoeveel kost het? En hoe begin je? Complete gids.",
+    "keywords": ["blog starten bedrijf", "zakelijk bloggen", "content strategie", "blog seo"],
+    "internalLinks": ["/diensten/seo", "/diensten/webdesign"]
+  },
+  {
+    "slug": "content-kalender-maken",
+    "titel": "Content Kalender Maken: Template + Voorbeelden",
+    "categorie": "content-marketing",
+    "beschrijving": "Maak een effectieve content kalender voor je bedrijf. Gratis template en praktische voorbeelden.",
+    "keywords": ["content kalender", "content planning", "redactiekalender", "content strategie"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "seo-kosten-belgie",
+    "titel": "Wat Kost SEO in België? Prijzen & Wat Je Ervoor Krijgt",
+    "categorie": "seo-basics",
+    "beschrijving": "Transparant overzicht van SEO kosten in België. Wat betaal je voor een SEO bureau en wat mag je verwachten?",
+    "keywords": ["seo kosten", "seo prijs", "seo bureau kosten", "seo investering"],
+    "internalLinks": ["/prijzen", "/diensten/seo"]
+  },
+  {
+    "slug": "seo-bureau-kiezen",
+    "titel": "SEO Bureau Kiezen: 8 Tips om het Juiste Bureau te Vinden",
+    "categorie": "seo-basics",
+    "beschrijving": "Hoe kies je het juiste SEO bureau? Waar moet je op letten? Red flags en groene vlaggen.",
+    "keywords": ["seo bureau kiezen", "seo agency", "seo bureau belgie", "seo partner"],
+    "internalLinks": ["/over-ons", "/cases", "/diensten/seo"]
+  },
+  {
+    "slug": "seo-resultaten-tijdlijn",
+    "titel": "Hoelang Duurt SEO? Realistische Tijdlijn en Verwachtingen",
+    "categorie": "seo-basics",
+    "beschrijving": "Wanneer zie je resultaat van SEO? Realistische tijdlijnen per type bedrijf en concurrentie.",
+    "keywords": ["hoe lang duurt seo", "seo resultaten", "seo tijdlijn", "seo verwachtingen"],
+    "internalLinks": ["/diensten/seo", "/cases"]
+  },
+  {
+    "slug": "seo-vs-sea-google-ads",
+    "titel": "SEO vs SEA (Google Ads): Wat is Beter voor Jouw Bedrijf?",
+    "categorie": "seo-basics",
+    "beschrijving": "Vergelijking tussen SEO en Google Ads. Wanneer kies je voor organisch en wanneer voor betaald?",
+    "keywords": ["seo vs sea", "seo vs google ads", "organisch vs betaald", "google ads of seo"],
+    "internalLinks": ["/diensten/seo", "/prijzen"]
+  },
+  {
+    "slug": "website-laten-maken-kosten",
+    "titel": "Website Laten Maken: Wat Kost het in 2025?",
+    "categorie": "webdesign",
+    "beschrijving": "Hoeveel kost een professionele website in België? Overzicht per type website met prijsindicaties.",
+    "keywords": ["website laten maken kosten", "website prijs", "webdesign kosten", "website bouwen prijs"],
+    "internalLinks": ["/diensten/webdesign", "/prijzen"]
+  },
+  {
+    "slug": "wordpress-vs-nextjs",
+    "titel": "WordPress vs Next.js: Welke is Beter voor Jouw Website?",
+    "categorie": "webdesign",
+    "beschrijving": "Vergelijking tussen WordPress en Next.js. Voordelen, nadelen en wanneer je welke kiest.",
+    "keywords": ["wordpress vs nextjs", "cms kiezen", "website platform", "headless cms"],
+    "internalLinks": ["/diensten/webdesign"]
+  },
+  {
+    "slug": "website-conversie-verhogen",
+    "titel": "Website Conversie Verhogen: 15 Bewezen Technieken",
+    "categorie": "webdesign",
+    "beschrijving": "Praktische tips om meer bezoekers om te zetten in klanten. Van CTA's tot formulieren en vertrouwen.",
+    "keywords": ["conversie optimalisatie", "cro", "meer conversies", "website conversie"],
+    "internalLinks": ["/diensten/webdesign", "/cases"]
+  },
+  {
+    "slug": "mobiele-website-belang",
+    "titel": "Waarom een Mobiele Website Essentieel is in 2025",
+    "categorie": "webdesign",
+    "beschrijving": "60%+ van je bezoekers komt via mobiel. Leer waarom mobile-first design cruciaal is voor SEO en conversie.",
+    "keywords": ["mobiele website", "responsive design", "mobile first", "mobile seo"],
+    "internalLinks": ["/diensten/webdesign", "/seo-check"]
+  },
+  {
+    "slug": "webshop-starten-belgie",
+    "titel": "Webshop Starten in België: Complete Gids voor Beginners",
+    "categorie": "webdesign",
+    "beschrijving": "Alles wat je moet weten om een webshop te starten in België. Platform keuze, juridisch, betalingen en marketing.",
+    "keywords": ["webshop starten", "webshop belgie", "online verkopen", "e-commerce starten"],
+    "internalLinks": ["/diensten/webdesign", "/prijzen"]
+  },
+  {
+    "slug": "google-analytics-beginners",
+    "titel": "Google Analytics 4 voor Beginners: Stap-voor-Stap",
+    "categorie": "analytics",
+    "beschrijving": "Leer Google Analytics 4 begrijpen en gebruiken. Van installatie tot de belangrijkste rapporten.",
+    "keywords": ["google analytics", "ga4", "website statistieken", "analytics beginners"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "google-search-console-gids",
+    "titel": "Google Search Console: De Complete Handleiding",
+    "categorie": "analytics",
+    "beschrijving": "Alles over Google Search Console: installatie, rapporten lezen, fouten oplossen en kansen ontdekken.",
+    "keywords": ["google search console", "gsc", "search console handleiding", "seo monitoring"],
+    "internalLinks": ["/diensten/seo", "/seo-check"]
+  },
+  {
+    "slug": "programmatic-seo-uitleg",
+    "titel": "Programmatic SEO: Wat is het en Hoe Werkt het?",
+    "categorie": "programmatic-seo",
+    "beschrijving": "Ontdek hoe programmatic SEO werkt. Automatisch honderden pagina's genereren die ranken in Google.",
+    "keywords": ["programmatic seo", "automatische seo paginas", "schaalbare seo", "data driven seo"],
+    "internalLinks": ["/diensten/programmatic-seo"]
+  },
+  {
+    "slug": "programmatic-seo-voorbeelden",
+    "titel": "10 Programmatic SEO Voorbeelden die Miljoenen Bezoekers Trekken",
+    "categorie": "programmatic-seo",
+    "beschrijving": "Inspirerende voorbeelden van bedrijven die programmatic SEO succesvol inzetten voor massaal verkeer.",
+    "keywords": ["programmatic seo voorbeelden", "pseo voorbeelden", "schaalbare content"],
+    "internalLinks": ["/diensten/programmatic-seo", "/cases"]
+  },
+  {
+    "slug": "seo-voor-restaurants",
+    "titel": "SEO voor Restaurants: Meer Gasten via Google",
+    "categorie": "niche-seo",
+    "beschrijving": "Specifieke SEO strategieën voor restaurants. Van Google Maps tot menu optimalisatie en review management.",
+    "keywords": ["seo restaurants", "restaurant marketing", "local seo horeca"],
+    "internalLinks": ["/diensten/seo/bedrijven/restaurants", "/diensten/local-seo"]
+  },
+  {
+    "slug": "seo-voor-advocaten",
+    "titel": "SEO voor Advocaten: Meer Cliënten via Zoekmachines",
+    "categorie": "niche-seo",
+    "beschrijving": "Hoe advocatenkantoren meer cliënten aantrekken via SEO. Content strategie, local SEO en authority building.",
+    "keywords": ["seo advocaten", "online marketing advocaat", "advocaat vindbaarheid"],
+    "internalLinks": ["/diensten/seo/bedrijven/advocaten", "/diensten/local-seo"]
+  },
+  {
+    "slug": "seo-voor-aannemers",
+    "titel": "SEO voor Aannemers en Bouwbedrijven: De Complete Gids",
+    "categorie": "niche-seo",
+    "beschrijving": "Specifieke SEO tips voor aannemers. Lokale zichtbaarheid, portfolio SEO en meer opdrachten via Google.",
+    "keywords": ["seo aannemers", "seo bouwbedrijf", "online marketing aannemer"],
+    "internalLinks": ["/diensten/seo/bedrijven/aannemers", "/diensten/local-seo"]
+  },
+  {
+    "slug": "seo-voor-webshops",
+    "titel": "E-commerce SEO: De Ultieme Gids voor Webshops",
+    "categorie": "niche-seo",
+    "beschrijving": "Alles over SEO voor webshops. Productpagina's optimaliseren, categorie SEO, technische tips en meer.",
+    "keywords": ["seo webshop", "e-commerce seo", "webshop optimaliseren", "product seo"],
+    "internalLinks": ["/diensten/seo/bedrijven/webshops", "/diensten/webdesign"]
+  },
+  {
+    "slug": "seo-voor-tandartsen",
+    "titel": "SEO voor Tandartsen: Meer Patiënten uit Jouw Regio",
+    "categorie": "niche-seo",
+    "beschrijving": "Local SEO strategieën specifiek voor tandartspraktijken. Meer zichtbaarheid, meer afspraken.",
+    "keywords": ["seo tandarts", "online marketing tandarts", "tandarts vindbaarheid"],
+    "internalLinks": ["/diensten/seo/bedrijven/tandartsen", "/diensten/local-seo"]
+  },
+  {
+    "slug": "seo-voor-vastgoedmakelaars",
+    "titel": "SEO voor Vastgoedmakelaars: Domineer de Lokale Markt",
+    "categorie": "niche-seo",
+    "beschrijving": "SEO strategieën voor vastgoedkantoren. Van buurt-pagina's tot property listings optimalisatie.",
+    "keywords": ["seo vastgoedmakelaar", "seo immokantoor", "online marketing vastgoed"],
+    "internalLinks": ["/diensten/seo/bedrijven/vastgoedmakelaars", "/diensten/local-seo"]
+  },
+  {
+    "slug": "seo-voor-saas-bedrijven",
+    "titel": "SaaS SEO: Groei Strategie voor Software Bedrijven",
+    "categorie": "niche-seo",
+    "beschrijving": "SEO strategie specifiek voor SaaS bedrijven. Content marketing, comparison pages en product-led SEO.",
+    "keywords": ["saas seo", "seo software bedrijf", "b2b seo", "saas marketing"],
+    "internalLinks": ["/diensten/seo/bedrijven/saas", "/diensten/programmatic-seo"]
+  },
+  {
+    "slug": "seo-voor-coaches-consultants",
+    "titel": "SEO voor Coaches en Consultants: Meer Klanten Online",
+    "categorie": "niche-seo",
+    "beschrijving": "Hoe coaches en consultants via SEO een constante stroom aan kwalitatieve leads genereren.",
+    "keywords": ["seo coach", "seo consultant", "online marketing coach", "personal branding seo"],
+    "internalLinks": ["/diensten/seo/bedrijven/coaches", "/diensten/local-seo"]
+  },
+  {
+    "slug": "seo-voor-kappers",
+    "titel": "SEO voor Kappers en Kapsalons: Volle Agenda via Google",
+    "categorie": "niche-seo",
+    "beschrijving": "Local SEO tips specifiek voor kappers. Google Maps, Instagram SEO en review strategie.",
+    "keywords": ["seo kapper", "seo kapsalon", "online marketing kapper", "kapper vindbaarheid"],
+    "internalLinks": ["/diensten/seo/bedrijven/kappers", "/diensten/local-seo"]
+  },
+  {
+    "slug": "ssl-certificaat-seo-belang",
+    "titel": "SSL Certificaat en SEO: Waarom HTTPS Essentieel is",
+    "categorie": "technische-seo",
+    "beschrijving": "Wat is een SSL certificaat? Waarom heeft HTTPS invloed op je SEO rankings? En hoe installeer je het?",
+    "keywords": ["ssl certificaat", "https seo", "website beveiliging", "ssl installeren"],
+    "internalLinks": ["/diensten/webdesign", "/seo-check"]
+  },
+  {
+    "slug": "xml-sitemap-uitleg",
+    "titel": "XML Sitemap: Wat is het en Waarom Heb je er Een Nodig?",
+    "categorie": "technische-seo",
+    "beschrijving": "Alles over XML sitemaps. Wat zijn ze, hoe maak je er een en hoe dien je ze in bij Google?",
+    "keywords": ["xml sitemap", "sitemap maken", "sitemap google", "sitemap indienen"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "meta-description-schrijven",
+    "titel": "Meta Description Schrijven die Kliks Opleveren",
+    "categorie": "content-marketing",
+    "beschrijving": "Leer hoe je perfecte meta descriptions schrijft. Templates, voorbeelden en do's & don'ts.",
+    "keywords": ["meta description", "meta beschrijving", "ctr verbeteren", "serp snippet"],
+    "internalLinks": ["/diensten/seo", "/seo-check"]
+  },
+  {
+    "slug": "interne-links-strategie",
+    "titel": "Interne Links Strategie: Boost je SEO met Slimme Linking",
+    "categorie": "technische-seo",
+    "beschrijving": "Hoe gebruik je interne links strategisch voor betere rankings? Pillar pages, topic clusters en meer.",
+    "keywords": ["interne links", "internal linking", "pillar page", "topic cluster"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "duplicate-content-oplossen",
+    "titel": "Duplicate Content: Wat is het en Hoe Los je het Op?",
+    "categorie": "technische-seo",
+    "beschrijving": "Duplicate content herkennen en oplossen. Canonical tags, redirects en andere methoden.",
+    "keywords": ["duplicate content", "canonical tag", "duplicate content oplossen"],
+    "internalLinks": ["/diensten/seo", "/seo-check"]
+  },
+  {
+    "slug": "google-update-herstellen",
+    "titel": "Google Update Herstellen: Wat te Doen als je Rankings Dalen",
+    "categorie": "seo-basics",
+    "beschrijving": "Je rankings zijn gedaald na een Google update. Wat nu? Stap-voor-stap herstelplan.",
+    "keywords": ["google update", "rankings dalen", "google penalty", "seo herstel"],
+    "internalLinks": ["/diensten/seo", "/contact"]
+  },
+  {
+    "slug": "ai-seo-impact",
+    "titel": "AI en SEO: Hoe AI Google Zoekresultaten Verandert",
+    "categorie": "seo-trends",
+    "beschrijving": "De impact van AI op SEO. Google SGE, AI content, en hoe je je strategie aanpast.",
+    "keywords": ["ai seo", "google sge", "ai content seo", "seo toekomst"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "seo-trends-2025",
+    "titel": "SEO Trends 2025: Wat Werkt en Wat Niet",
+    "categorie": "seo-trends",
+    "beschrijving": "De belangrijkste SEO trends voor 2025. Van AI overviews tot E-E-A-T en zero-click searches.",
+    "keywords": ["seo trends 2025", "seo veranderingen", "google update 2025", "seo strategie 2025"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "voice-search-optimalisatie",
+    "titel": "Voice Search Optimalisatie: Klaar voor Spraakzoekopdrachten",
+    "categorie": "seo-trends",
+    "beschrijving": "Hoe optimaliseer je voor voice search? Featured snippets, FAQ's en conversational keywords.",
+    "keywords": ["voice search", "spraakzoeken", "seo voice search", "featured snippet"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "seo-audit-zelf-doen",
+    "titel": "SEO Audit Zelf Doen: Gratis Stap-voor-Stap Handleiding",
+    "categorie": "seo-basics",
+    "beschrijving": "Doe zelf een SEO audit met gratis tools. Controleer technische SEO, content en backlinks.",
+    "keywords": ["seo audit", "website audit", "seo controle", "gratis seo audit"],
+    "internalLinks": ["/seo-check", "/diensten/seo", "/contact"]
+  },
+  {
+    "slug": "google-mijn-bedrijf-aanmaken",
+    "titel": "Google Mijn Bedrijf Aanmaken en Verifiëren: Stap-voor-Stap",
+    "categorie": "local-seo",
+    "beschrijving": "Hoe maak je een Google Mijn Bedrijf profiel aan? Complete gids van aanmaken tot verifiëren.",
+    "keywords": ["google mijn bedrijf", "google bedrijfsprofiel", "gmb aanmaken", "google verificatie"],
+    "internalLinks": ["/diensten/local-seo"]
+  },
+  {
+    "slug": "lokale-citaties-bouwen",
+    "titel": "Lokale Citaties Bouwen: NAP Consistentie voor Local SEO",
+    "categorie": "local-seo",
+    "beschrijving": "Wat zijn lokale citaties? Welke directories zijn belangrijk in België? En hoe bouw je ze op?",
+    "keywords": ["lokale citaties", "nap consistentie", "business directories", "local seo belgie"],
+    "internalLinks": ["/diensten/local-seo"]
+  },
+  {
+    "slug": "website-redesign-seo-behouden",
+    "titel": "Website Redesign zonder SEO te Verliezen: De Complete Gids",
+    "categorie": "webdesign",
+    "beschrijving": "Hoe behoud je je SEO rankings bij een website redesign? Redirect plan, URL mapping en meer.",
+    "keywords": ["website redesign seo", "website migratie", "301 redirect", "seo behouden"],
+    "internalLinks": ["/diensten/webdesign", "/diensten/seo"]
+  },
+  {
+    "slug": "ux-design-seo-impact",
+    "titel": "UX Design en SEO: Hoe Gebruikerservaring je Rankings Beïnvloedt",
+    "categorie": "webdesign",
+    "beschrijving": "De link tussen UX en SEO. Hoe bounce rate, dwell time en navigatie je Google rankings beïnvloeden.",
+    "keywords": ["ux seo", "gebruikerservaring seo", "bounce rate", "dwell time"],
+    "internalLinks": ["/diensten/webdesign"]
+  },
+  {
+    "slug": "afbeeldingen-seo-optimaliseren",
+    "titel": "Afbeeldingen Optimaliseren voor SEO: Complete Gids",
+    "categorie": "technische-seo",
+    "beschrijving": "Alles over image SEO. Alt-teksten, bestandsgrootte, WebP format, lazy loading en meer.",
+    "keywords": ["afbeeldingen seo", "image optimization", "alt tekst", "webp formaat"],
+    "internalLinks": ["/diensten/seo", "/seo-check"]
+  },
+  {
+    "slug": "seo-voor-b2b-bedrijven",
+    "titel": "B2B SEO Strategie: Meer Kwalitatieve Leads Genereren",
+    "categorie": "niche-seo",
+    "beschrijving": "SEO strategie specifiek voor B2B bedrijven. Langere sales cycles, thought leadership en lead magnets.",
+    "keywords": ["b2b seo", "b2b marketing", "b2b leads", "seo zakelijke klanten"],
+    "internalLinks": ["/diensten/seo", "/diensten/programmatic-seo"]
+  },
+  {
+    "slug": "seo-voor-startups",
+    "titel": "SEO voor Startups: Groei Strategie met Beperkt Budget",
+    "categorie": "niche-seo",
+    "beschrijving": "Hoe startups met beperkt budget toch SEO succes boeken. Focus, prioriteiten en quick wins.",
+    "keywords": ["seo startups", "startup marketing", "seo budget", "growth hacking seo"],
+    "internalLinks": ["/diensten/seo/bedrijven/startups", "/prijzen"]
+  },
+  {
+    "slug": "seo-voor-fitness-wellness",
+    "titel": "SEO voor Fitness en Wellness Bedrijven",
+    "categorie": "niche-seo",
+    "beschrijving": "SEO tips voor sportscholen, personal trainers, yoga studios en wellness centra.",
+    "keywords": ["seo fitness", "seo sportschool", "seo personal trainer", "seo wellness"],
+    "internalLinks": ["/diensten/seo/bedrijven/fitness", "/diensten/local-seo"]
+  },
+  {
+    "slug": "hreflang-meertalige-seo",
+    "titel": "Hreflang Tags en Meertalige SEO voor Belgische Websites",
+    "categorie": "technische-seo",
+    "beschrijving": "Hoe gebruik je hreflang tags correct voor meertalige websites in België (NL/FR/EN)?",
+    "keywords": ["hreflang", "meertalige seo", "internationaal seo", "taalversies website"],
+    "internalLinks": ["/diensten/seo"]
+  },
+  {
+    "slug": "seo-checklist-nieuwe-website",
+    "titel": "SEO Checklist voor een Nieuwe Website: 25 Must-Do's",
+    "categorie": "seo-basics",
+    "beschrijving": "Launch je een nieuwe website? Gebruik deze SEO checklist om vanaf dag één goed te scoren.",
+    "keywords": ["seo checklist nieuwe website", "website lancering seo", "seo setup"],
+    "internalLinks": ["/diensten/seo", "/diensten/webdesign", "/seo-check"]
+  }
+]
