@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { OrganizationSchema } from "@/components/seo/JsonLd";
 import "./globals.css";
 
 const inter = Inter({
@@ -56,7 +57,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl" className={inter.variable}>
+      <head>
+        <OrganizationSchema />
+      </head>
       <body className="bg-background text-foreground antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+        >
+          Ga naar inhoud
+        </a>
         {children}
       </body>
     </html>

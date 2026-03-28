@@ -6,6 +6,7 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
+import { ServiceSchema, BreadcrumbSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Local SEO | Hazier - Domineer Lokale Zoekresultaten",
@@ -131,6 +132,12 @@ const faqs = [
 export default function LocalSEOPage() {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema
+        name="Local SEO"
+        description="Local SEO diensten voor meer lokale klanten. Google Maps rankings, Google Business Profile optimalisatie, citation building en review management."
+        url="/diensten/local-seo"
+      />
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Diensten", href: "/diensten" }, { name: "Local SEO", href: "/diensten/local-seo" }]} />
       <Header />
 
       {/* Hero */}

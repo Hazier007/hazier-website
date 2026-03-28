@@ -107,10 +107,10 @@ export function Services() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-4 flex items-center">
+                    <h3 className="font-semibold text-foreground mb-4 flex items-center text-base">
                       <Target className="w-4 h-4 mr-2 text-accent" />
                       Wat je krijgt:
-                    </h4>
+                    </h3>
                     <ul className="space-y-3">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start">

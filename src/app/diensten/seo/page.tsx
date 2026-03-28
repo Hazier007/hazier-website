@@ -6,6 +6,7 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
+import { ServiceSchema, BreadcrumbSchema } from "@/components/seo/JsonLd";
 import niches from "@/data/niches.json";
 import steden from "@/data/steden.json";
 
@@ -89,9 +90,15 @@ export default function SEOPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema
+        name="SEO Optimalisatie"
+        description="Professionele SEO optimalisatie voor meer organisch verkeer en betere conversies. Technische SEO, content marketing, link building en lokale SEO."
+        url="/diensten/seo"
+      />
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Diensten", href: "/diensten" }, { name: "SEO", href: "/diensten/seo" }]} />
       <Header />
-      
-      <main className="pt-16">
+
+      <main id="main" className="pt-16">
         {/* Hero Section */}
         <Section size="xl">
           <div className="max-w-4xl mx-auto text-center">

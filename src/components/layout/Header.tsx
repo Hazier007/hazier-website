@@ -33,7 +33,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/logo.webp" alt="Hazier" width={40} height={40} className="h-10 w-auto" />
+              <Image src="/logo.webp" alt="Hazier" width={40} height={40} priority className="h-10 w-auto" />
               <span className="text-2xl font-bold text-foreground">Hazier</span>
             </Link>
           </div>

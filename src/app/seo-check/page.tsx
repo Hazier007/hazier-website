@@ -3,6 +3,9 @@
 import React, { useState } from 'react';
 import { ChevronRightIcon, CheckCircleIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
+// Metadata is exported from a separate layout file since this is a client component
+// See src/app/seo-check/layout.tsx
+
 interface SeoCheckResult {
   score: number;
   url: string;

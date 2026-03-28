@@ -5,6 +5,7 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
+import { ServiceSchema, BreadcrumbSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Webdesign & Development | Hazier - Moderne Websites",
@@ -50,9 +51,15 @@ export default function WebdesignPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema
+        name="Webdesign & Development"
+        description="Professionele webdesign en development services. Responsive designs, Next.js, WordPress, snelle laadtijden en e-commerce oplossingen."
+        url="/diensten/webdesign"
+      />
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Diensten", href: "/diensten" }, { name: "Webdesign", href: "/diensten/webdesign" }]} />
       <Header />
-      
-      <main className="pt-16">
+
+      <main id="main" className="pt-16">
         {/* Hero Section */}
         <Section size="xl">
           <div className="max-w-4xl mx-auto text-center">
