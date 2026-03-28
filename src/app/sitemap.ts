@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import nichesData from '@/data/niches.json';
 import stedenData from '@/data/steden.json';
 import casesData from '@/data/cases.json';
+import blogPosts from '@/data/blog-posts.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://hazier.be';
@@ -116,8 +117,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  // Blog posts
+  const blogPages = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
+    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    ...blogPages,
     ...seoNichePages,
     ...seoStadPages,
     ...webdesignNichePages,

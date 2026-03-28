@@ -18,6 +18,7 @@ const navigation = [
     ],
   },
   { name: "Cases", href: "/cases" },
+  { name: "Blog", href: "/blog" },
   { name: "Prijzen", href: "/prijzen" },
   { name: "Contact", href: "/contact" },
 ];

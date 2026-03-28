@@ -1,0 +1,40 @@
+{
+  "sections": [
+    {
+      "heading": "Waarom leren van de besten?",
+      "body": "Programmatic SEO klinkt in theorie eenvoudig, maar de uitvoering bepaalt het verschil tussen succes en een verzameling waardeloze pagina's. De beste manier om te begrijpen hoe het werkt, is door te kijken naar bedrijven die het op grote schaal succesvol toepassen. Elk van deze voorbeelden biedt concrete lessen die je kunt toepassen op je eigen strategie.\n\nIn dit artikel bekijken we tien uiteenlopende voorbeelden, van internationale technologiebedrijven tot nichespelers. Bij elk voorbeeld analyseren we de aanpak, de databron, het type pagina's en wat we ervan kunnen leren."
+    },
+    {
+      "heading": "Zapier: integratiepagina's als groeimotor",
+      "body": "Zapier is misschien wel het meest geciteerde voorbeeld van programmatic SEO. Het platform genereert duizenden pagina's rond het thema 'app A koppelen met app B'. Denk aan pagina's als 'Gmail en Slack integratie' of 'Trello koppelen aan Google Sheets'. Elke pagina volgt hetzelfde template maar bevat unieke content over die specifieke combinatie.\n\nDe databron is simpel: een lijst van alle beschikbare integraties. Het template bevat een beschrijving van de koppeling, populaire workflows, een call-to-action om het uit te proberen en gerelateerde integraties. De kracht zit in het enorme volume aan pagina's dat samen miljoenen long-tail bezoeken oplevert.\n\nWat we hiervan leren: zoek combinatorische patronen in je aanbod. Als je product of dienst meerdere variabelen combineert, kun je voor elke combinatie een pagina genereren."
+    },
+    {
+      "heading": "Wise: valutapagina's met real-time data",
+      "body": "Wise, het internationale geldtransferplatform, genereert pagina's voor elke mogelijke valutaconversie. 'EUR naar USD', 'GBP naar JPY', noem maar op. Elke pagina toont de actuele wisselkoers, een calculator, historische grafieken en uitleg over de specifieke valutacorridor.\n\nDe databron bestaat uit real-time koersdata via financiele API's. Het briljante aan deze aanpak is dat de pagina's automatisch worden bijgewerkt, waardoor ze altijd relevante informatie bevatten. Dit geeft Google een reden om de pagina's frequent te crawlen en hoog te ranken.\n\nDe les voor jou: als je toegang hebt tot dynamische data die regelmatig verandert, kun je pagina's creeren die altijd actueel zijn. Dat is een sterke USP ten opzichte van statische content."
+    },
+    {
+      "heading": "Nomad List: steden ranken op leefbaarheid",
+      "body": "Nomad List is een platform voor digitale nomaden en genereert pagina's per stad met scores voor internetsnelheid, kosten van levensonderhoud, veiligheid, klimaat en meer. Elke stadspagina volgt hetzelfde stramien maar bevat unieke datapunten.\n\nDe data wordt deels gecrowdsourced door de community en deels opgehaald uit publieke bronnen. De combinatie van gestructureerde data en user-generated content maakt elke pagina inhoudelijk rijk. Bovendien linken de pagina's onderling via filters en vergelijkingen, wat een sterk intern linknetwerk oplevert.\n\nHiervan leren we dat community-input je content een extra laag authenticiteit en diepgang geeft. Als je gebruikers hebt die data of reviews kunnen bijdragen, integreer dat dan in je templates."
+    },
+    {
+      "heading": "TripAdvisor: de kracht van reviews en locatiedata",
+      "body": "TripAdvisor is een gigant in programmatic SEO. Het platform genereert pagina's voor hotels, restaurants en bezienswaardigheden in vrijwel elke stad ter wereld. Elke pagina bevat beschrijvingen, foto's, beoordelingen, prijzen en links naar gerelateerde locaties.\n\nDe kracht zit in de combinatie van gestructureerde bedrijfsdata en een enorme hoeveelheid gebruikersreviews. Die reviews zorgen ervoor dat elke pagina uniek is, zelfs als het template identiek is. Bovendien genereert TripAdvisor ook overzichtspagina's zoals 'beste restaurants in Gent' of 'top bezienswaardigheden in Brugge', die elk opnieuw een sterk zoekwoord targeten.\n\nDe takeaway: user-generated content is een van de beste manieren om je programmatische pagina's uniek en waardevol te maken. Moedig je bezoekers aan om reviews, foto's of ervaringen te delen."
+    },
+    {
+      "heading": "Canva en G2: templates en softwarevergelijkingen",
+      "body": "Canva genereert duizenden pagina's rond design templates. Zoekwoorden als 'Instagram post template', 'verjaardagskaart ontwerpen' of 'CV template gratis' leiden allemaal naar specifieke templatepagina's. De databron is het eigen platform: elke template in de bibliotheek krijgt automatisch een geoptimaliseerde landingspagina.\n\nG2 pakt het anders aan met softwarevergelijkingspagina's. 'Salesforce vs HubSpot', 'Slack vs Microsoft Teams': voor elke combinatie van populaire softwareproducten bestaat een pagina met scores, reviews en feature-vergelijkingen. De data komt van gebruikersreviews en productspecificaties.\n\nBeide voorbeelden tonen aan dat je bestaande content of productdata kunt herstructureren tot SEO-geoptimaliseerde pagina's. Je hoeft niet altijd nieuwe content te creeren; soms is het reorganiseren van bestaande data al voldoende."
+    },
+    {
+      "heading": "Yelp en Zillow: lokale en vastgoeddata",
+      "body": "Yelp genereert lokale bedrijfspagina's per categorie en locatie. 'Loodgieters in Antwerpen', 'Kappers in Brussel': elke combinatie van bedrijfstype en locatie krijgt een eigen pagina met listings, reviews en contactgegevens. De databron combineert bedrijfsregisters met gebruikersbijdragen.\n\nZillow doet hetzelfde voor vastgoed in de Verenigde Staten. Elke wijk, stad en postcode heeft pagina's met huizenprijzen, beschikbare woningen, buurtstatistieken en markttrends. De data komt uit vastgoeddatabases, overheidsregisters en eigen algoritmen.\n\nVoor Belgische bedrijven is de les helder: lokale data biedt enorme kansen. Als je actief bent in meerdere regio's of gemeenten, kun je voor elke locatie geoptimaliseerde pagina's genereren met relevante lokale informatie."
+    },
+    {
+      "heading": "BankMyCell en Aura: nichedata slim ingezet",
+      "body": "BankMyCell is een kleiner maar leerzaam voorbeeld. De site genereert pagina's rond de inruilwaarde van smartphones. 'iPhone 14 inruilen', 'Samsung Galaxy S23 verkopen': elke pagina toont actuele inruilprijzen van verschillende diensten. De data wordt via API's en scraping verzameld.\n\nAura, een cybersecurity-bedrijf, genereert pagina's rond het thema identiteitsdiefstal per staat en type fraude. Elke pagina combineert statistieken, praktische tips en links naar hun diensten. De data komt uit openbare overheidsbronnen en eigen onderzoek.\n\nDeze voorbeelden bewijzen dat je geen gigantisch platform hoeft te zijn om programmatic SEO succesvol in te zetten. Ook met nichedata en een beperkt budget kun je honderden waardevolle pagina's opbouwen die gericht verkeer aantrekken."
+    },
+    {
+      "heading": "Lessen en toepassing voor jouw website",
+      "body": "Uit deze tien voorbeelden destilleren we enkele universele principes. Ten eerste: zoek naar herhaalbare zoekwoordpatronen in je branche. Als mensen zoeken naar '[jouw dienst] in [locatie]' of '[product A] vs [product B]', heb je een kans voor programmatic SEO.\n\nTen tweede: investeer in datakwaliteit. De beste programmatische pagina's combineren gestructureerde data met unieke elementen zoals reviews, statistieken of dynamische informatie. Ten derde: bouw een template dat niet alleen SEO-technisch klopt, maar ook echte waarde biedt aan de bezoeker. Denk aan nuttige vergelijkingen, actuele cijfers of praktische tools.\n\nTot slot: begin bescheiden en schaal op. Start met een paar tientallen pagina's, meet de resultaten en optimaliseer je template voordat je duizenden pagina's genereert. Programmatic SEO is een marathon, geen sprint. Neem contact op met Hazier als je wilt ontdekken welke programmatic SEO-kansen er voor jouw website bestaan."
+    }
+  ]
+}

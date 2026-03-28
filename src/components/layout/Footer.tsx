@@ -11,6 +11,7 @@ const footerNavigation = {
   bedrijf: [
     { name: "Over ons", href: "/over-ons" },
     { name: "Cases", href: "/cases" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
     { name: "Prijzen", href: "/prijzen" },
   ],

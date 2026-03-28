@@ -1,0 +1,36 @@
+{
+  "sections": [
+    {
+      "heading": "15 bewezen technieken om je websiteconversie te verhogen",
+      "body": "Je website trekt bezoekers aan, maar hoeveel van hen worden daadwerkelijk klant? De conversieratio is een van de belangrijkste metrics voor elke website. Gemiddeld converteert slechts 2 tot 3 procent van alle websitebezoekers. Dat betekent dat 97 van de 100 bezoekers je website verlaten zonder actie te ondernemen. Zelfs een kleine verbetering van je conversieratio kan een enorm verschil maken voor je omzet.\n\nIn dit artikel delen we 15 praktische technieken die je vandaag nog kunt toepassen om meer bezoekers om te zetten in leads en klanten. Van overtuigende call-to-actions tot slimme A/B tests, elke techniek is gebaseerd op bewezen principes uit de conversie-optimalisatie."
+    },
+    {
+      "heading": "1. Schrijf overtuigende call-to-actions",
+      "body": "Je call-to-action knoppen zijn het meest kritieke element op je website. Een vage knop met de tekst Meer info levert beduidend minder kliks op dan een specifieke, actiegericht CTA zoals Ontvang je gratis offerte of Start je gratis proefperiode. Gebruik actieve werkwoorden en maak duidelijk wat de bezoeker krijgt als hij klikt.\n\nPlaats je primaire CTA boven de vouw, zodat bezoekers hem zien zonder te scrollen. Gebruik een contrasterende kleur die opvalt ten opzichte van de rest van je design. Herhaal de CTA op strategische plekken doorheen de pagina, bijvoorbeeld na elk inhoudelijk blok. Test verschillende teksten, kleuren en posities om te ontdekken wat het beste werkt voor jouw doelgroep."
+    },
+    {
+      "heading": "2. Gebruik trust signals en social proof",
+      "body": "Mensen kopen van bedrijven die ze vertrouwen. Trust signals zijn elementen die dat vertrouwen opbouwen. Denk aan klantenreviews en testimonials, logo's van bekende klanten, certificeringen en keurmerken, en aantallen zoals Meer dan 500 tevreden klanten. Plaats deze elementen zichtbaar op je belangrijkste paginas, bij voorkeur in de buurt van je call-to-action.\n\nSocial proof werkt omdat mensen van nature geneigd zijn om het gedrag van anderen te volgen. Een product met 200 positieve reviews voelt betrouwbaarder aan dan een product zonder reviews, zelfs als dat laatste product objectief beter is. Integreer reviews van Google of Trustpilot op je website en vraag tevreden klanten actief om een beoordeling achter te laten. Concrete cijfers en namen werken beter dan anonieme getuigenissen."
+    },
+    {
+      "heading": "3. Optimaliseer je formulieren",
+      "body": "Elk extra veld in je contactformulier verlaagt de kans dat iemand het invult. Vraag alleen de informatie die je echt nodig hebt voor een eerste contact. Voor de meeste bedrijven volstaan naam, e-mailadres en een berichtveld. Als je meer gegevens nodig hebt, overweeg dan een meerstaps formulier dat de velden over meerdere schermen verdeelt.\n\nLabel je formuliervelden duidelijk en gebruik inline validatie zodat bezoekers direct zien als ze iets fout invullen. Vermeld boven het formulier wat de bezoeker kan verwachten, bijvoorbeeld Vul het formulier in en we contacteren je binnen 24 uur. Voeg een privacyvermelding toe om bezoekers gerust te stellen dat hun gegevens veilig zijn. Deze kleine aanpassingen kunnen de invulratio van je formulier met 20 tot 50 procent verhogen."
+    },
+    {
+      "heading": "4. Voer A/B tests uit",
+      "body": "A/B testing is de meest betrouwbare manier om te ontdekken wat werkt en wat niet. In plaats van te gissen welke knopkleur of koptekst beter presteert, toon je twee varianten aan verschillende bezoekers en meet je welke meer conversies oplevert. Begin met de elementen die de grootste impact hebben: je koppen, CTA-teksten, formulieren en hero-afbeeldingen.\n\nGebruik een tool als Google Optimize of VWO om je tests op te zetten. Zorg ervoor dat je voldoende verkeer hebt om statistische significantie te bereiken, anders trek je conclusies op basis van toeval. Een goede vuistregel is minimaal 100 conversies per variant voordat je een winnaar uitroept. Test slechts een element tegelijk zodat je precies weet welke aanpassing het verschil heeft gemaakt."
+    },
+    {
+      "heading": "5. Verbeter je laadsnelheid",
+      "body": "Elke seconde extra laadtijd kost je conversies. Onderzoek toont aan dat een vertraging van 1 seconde de conversieratio met 7 procent kan doen dalen. Voor een webshop die 10.000 euro per maand omzet, betekent dat een verlies van 700 euro per maand door een trage website. Snelheid is bovendien een directe rankingfactor voor Google.\n\nDe meest voorkomende oorzaken van trage websites zijn niet-geoptimaliseerde afbeeldingen, te veel externe scripts, geen caching en slechte hosting. Comprimeer je afbeeldingen met tools als TinyPNG of gebruik moderne formaten zoals WebP. Minimaliseer je CSS en JavaScript bestanden. Kies een hostingprovider met servers in de Benelux voor de snelste laadtijden voor je Belgische bezoekers. Meet je snelheid regelmatig met Google PageSpeed Insights en streef naar een score van minimaal 90."
+    },
+    {
+      "heading": "6. Zorg voor een uitstekende mobiele ervaring",
+      "body": "Meer dan 60 procent van het webverkeer in Belgie komt van mobiele apparaten. Als je website niet optimaal werkt op een smartphone, verlies je het merendeel van je potentiele klanten. Mobiele bezoekers zijn ongeduldig: als ze moeten zoomen, horizontaal scrollen of te lang wachten, zijn ze vertrokken.\n\nZorg ervoor dat knoppen groot genoeg zijn om met een duim aan te tikken, dat tekst leesbaar is zonder in te zoomen en dat formulieren makkelijk in te vullen zijn op een klein scherm. Test je website op verschillende smartphones en tablets, niet alleen op je eigen toestel. Let extra op de checkout-flow van je webshop: elk obstakel in het mobiele bestelproces is een reden voor je klant om af te haken."
+    },
+    {
+      "heading": "7. Implementeer exitintent popups en urgentie",
+      "body": "Exitintent popups verschijnen wanneer een bezoeker op het punt staat je website te verlaten. Ze krijgen vaak een slechte reputatie, maar als je ze goed inzet, kunnen ze een krachtig conversie-instrument zijn. Bied iets waardevols aan in je popup: een korting, een gratis e-book of een exclusieve checklist. Vermijd generieke boodschappen als Schrijf je in voor onze nieuwsbrief, want dat overtuigt niemand meer.\n\nUrgentie en schaarste zijn krachtige psychologische triggers. Een tekst als Nog 3 plaatsen beschikbaar of Aanbieding geldig tot middernacht kan bezoekers over de streep trekken. Gebruik deze technieken echter alleen als ze op waarheid berusten. Nep-urgentie wordt snel doorzien en schaadt je geloofwaardigheid. Combineer urgentie met een helder waardevoorstel voor het beste resultaat.\n\nAndere technieken die je conversie kunnen boosten zijn het gebruik van video op je landingspaginas, het personaliseren van content op basis van bezoekersgedrag, het vereenvoudigen van je navigatie, het toevoegen van een live chat functie en het prominent tonen van je contactgegevens. Elk bedrijf is anders, dus test welke combinatie van technieken het beste resultaat oplevert voor jouw specifieke situatie."
+    }
+  ]
+}
