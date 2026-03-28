@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Section } from "@/components/ui/Section";
@@ -105,6 +106,19 @@ export default async function BlogPostPage({
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
                 {post.titel}
               </h1>
+
+              {post.image && (
+                <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+                  <Image
+                    src={post.image}
+                    alt={post.titel}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    priority
+                  />
+                </div>
+              )}
 
               <p className="text-xl text-text-secondary mb-8">
                 {post.beschrijving}
