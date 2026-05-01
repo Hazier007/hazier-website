@@ -61,9 +61,9 @@ export default function LiquidEther({
 
     // Common
     const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
-    let rect = container.getBoundingClientRect();
-    let width = Math.max(1, Math.floor(rect.width));
-    let height = Math.max(1, Math.floor(rect.height));
+    const rect = container.getBoundingClientRect();
+    const width = Math.max(1, Math.floor(rect.width));
+    const height = Math.max(1, Math.floor(rect.height));
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.autoClear = false;

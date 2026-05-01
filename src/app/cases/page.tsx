@@ -5,14 +5,18 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
-import casesData from "@/data/cases.json";
+import { listCases } from "@/lib/cases";
 
 export const metadata: Metadata = {
   title: "Cases & Portfolio | Hazier - Bewezen SEO Resultaten",
   description: "Bekijk onze SEO cases en portfolio. Van 0 naar marktleider: echte resultaten voor lokale bedrijven, e-commerce en SaaS platforms.",
 };
 
-export default function CasesPage() {
+export const dynamic = "force-dynamic";
+
+export default async function CasesPage() {
+  const casesData = await listCases();
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -79,7 +83,7 @@ export default function CasesPage() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {casesData.map((caseItem, index) => (
+              {casesData.map((caseItem) => (
                 <Card key={caseItem.slug} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
                   <div className="aspect-video bg-gradient-to-br from-accent/20 to-purple-600/20 p-6 flex items-center justify-center">
                     <div className="text-center">
@@ -90,10 +94,10 @@ export default function CasesPage() {
                   
                   <CardHeader className="pb-4">
                     <div className="flex items-center justify-between mb-2">
-                      <CardTitle className="text-xl text-foreground">{caseItem.titel}</CardTitle>
+                      <CardTitle className="text-xl text-foreground">{caseItem.title}</CardTitle>
                     </div>
                     <CardDescription className="text-text-secondary text-sm">
-                      {caseItem.beschrijving}
+                      {caseItem.description}
                     </CardDescription>
                   </CardHeader>
 
@@ -109,7 +113,7 @@ export default function CasesPage() {
 
                     {/* Key Results */}
                     <div className="space-y-2 mb-6">
-                      {Object.entries(caseItem.resultaten).slice(0, 2).map(([key, value], resultIndex) => (
+                      {Object.entries(caseItem.results).slice(0, 2).map(([, value], resultIndex) => (
                         <div key={resultIndex} className="flex items-center text-sm">
                           <div className="w-2 h-2 bg-accent rounded-full mr-2 flex-shrink-0"></div>
                           <span className="text-text-secondary">{value}</span>

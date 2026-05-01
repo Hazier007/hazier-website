@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     let targetUrl: URL;
     try {
       targetUrl = new URL(url.startsWith('http') ? url : `https://${url}`);
-    } catch (error) {
+    } catch {
       return NextResponse.json(
         { error: 'Invalid URL format' },
         { status: 400 }
@@ -46,12 +46,15 @@ export async function POST(request: NextRequest) {
     }
 
     // Fetch the webpage
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
     const response = await fetch(targetUrl.toString(), {
       headers: {
         'User-Agent': 'Mozilla/5.0 (compatible; Hazier SEO Checker/1.0)',
       },
-      timeout: 10000,
+      signal: controller.signal,
     });
+    clearTimeout(timeout);
 
     if (!response.ok) {
       return NextResponse.json(

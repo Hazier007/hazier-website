@@ -7,7 +7,6 @@ import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import pakkettenData from "@/data/pakketten.json";
 import { StripeCheckout } from "@/components/StripeCheckout";
-import { getStripePriceId } from "@/lib/stripe/prices";
 
 export const metadata: Metadata = {
   title: "Prijzen & Pakketten | Hazier - Transparante SEO & Web Tarieven",
@@ -21,6 +20,8 @@ export default function PrijzenPage() {
     if (typeof price === "string") return price;
     return `€${price}${periode === "eenmalig" ? "" : `/${periode}`}`;
   };
+
+  const packageKey = (group: string, key?: string) => (key ? `${group}:${key}` : undefined);
 
   return (
     <div className="min-h-screen bg-background">
@@ -96,7 +97,7 @@ export default function PrijzenPage() {
                       </Button>
                     ) : (
                       <StripeCheckout
-                        priceId={getStripePriceId(pakket.stripe_price_id)}
+                        packageKey={packageKey("seo", pakket.stripe_price_id)}
                         mode={pakket.periode === "maand" ? "subscription" : "payment"}
                         pakketNaam={`SEO - ${pakket.naam}`}
                         popular={pakket.populair}
@@ -155,7 +156,7 @@ export default function PrijzenPage() {
                     </ul>
 
                     <StripeCheckout
-                      priceId={getStripePriceId(pakket.stripe_price_id)}
+                      packageKey={packageKey("webdesign", pakket.stripe_price_id)}
                       mode={pakket.periode === "maand" ? "subscription" : "payment"}
                       pakketNaam={`Webdesign - ${pakket.naam}`}
                       popular={pakket.populair}
@@ -210,7 +211,7 @@ export default function PrijzenPage() {
                     </ul>
 
                     <StripeCheckout
-                      priceId={getStripePriceId(pakket.stripe_price_id)}
+                      packageKey={packageKey("linkbuilding", pakket.stripe_price_id)}
                       mode={pakket.periode === "maand" ? "subscription" : "payment"}
                       pakketNaam={`Linkbuilding - ${pakket.naam}`}
                       popular={pakket.populair}
@@ -250,7 +251,7 @@ export default function PrijzenPage() {
                     </CardDescription>
                     {addon.stripe_price_id ? (
                       <StripeCheckout
-                        priceId={getStripePriceId(addon.stripe_price_id)}
+                        packageKey={packageKey("addon", addon.stripe_price_id)}
                         mode="payment"
                         pakketNaam={`Add-on - ${addon.naam}`}
                         label="Bestellen"

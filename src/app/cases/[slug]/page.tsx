@@ -6,23 +6,16 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
-import casesData from "@/data/cases.json";
+import { getCaseBySlug, listCases } from "@/lib/cases";
 
 interface CasePageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Generate static params for all cases
-export async function generateStaticParams() {
-  return casesData.map((caseItem) => ({
-    slug: caseItem.slug,
-  }));
-}
-
 // Generate metadata for each case
 export async function generateMetadata({ params }: CasePageProps): Promise<Metadata> {
   const { slug } = await params;
-  const caseItem = casesData.find(c => c.slug === slug);
+  const caseItem = await getCaseBySlug(slug);
   
   if (!caseItem) {
     return {
@@ -31,21 +24,21 @@ export async function generateMetadata({ params }: CasePageProps): Promise<Metad
   }
 
   return {
-    title: `${caseItem.titel} Case Study | Hazier - ${caseItem.type}`,
-    description: `${caseItem.beschrijving} Bekijk de volledige case study met resultaten, strategie en implementatie.`,
+    title: `${caseItem.title} Case Study | Hazier - ${caseItem.type}`,
+    description: `${caseItem.description} Bekijk de volledige case study met resultaten, strategie en implementatie.`,
   };
 }
 
 export default async function CasePage({ params }: CasePageProps) {
   const { slug } = await params;
-  const caseItem = casesData.find(c => c.slug === slug);
+  const caseItem = await getCaseBySlug(slug);
 
   if (!caseItem) {
     notFound();
   }
 
   // Get related cases (same type or similar services)
-  const relatedCases = casesData
+  const relatedCases = (await listCases())
     .filter(c => 
       c.slug !== caseItem.slug && 
       (c.type === caseItem.type || c.services.some(s => caseItem.services.includes(s)))
@@ -64,10 +57,10 @@ export default async function CasePage({ params }: CasePageProps) {
               Case Study
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              {caseItem.titel}
+              {caseItem.title}
             </h1>
             <p className="text-xl text-text-secondary mb-8">
-              {caseItem.beschrijving}
+              {caseItem.description}
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               {caseItem.services.map((service, index) => (
@@ -107,7 +100,7 @@ export default async function CasePage({ params }: CasePageProps) {
               </div>
               <div className="space-y-2">
                 <div className="text-lg font-bold text-foreground">Klant</div>
-                <div className="text-text-secondary">{caseItem.klant}</div>
+                <div className="text-text-secondary">{caseItem.client}</div>
               </div>
             </div>
           </div>
@@ -126,16 +119,7 @@ export default async function CasePage({ params }: CasePageProps) {
                   </h2>
                   <div className="prose prose-lg max-w-none text-text-secondary">
                     <p>
-                      {caseItem.type === "Rank & Rent" && "Het doel was om vanuit het niets een dominante positie op te bouwen in de lokale markt voor slotenmaker services in Oost-Vlaanderen. Zonder bestaande website of online aanwezigheid moesten we snel zichtbaar worden voor relevante zoektermen."}
-                      {caseItem.type === "E-commerce SEO" && "De webshop had moeite om organisch verkeer te genereren voor commerciële zoektermen. Product pagina's rankten slecht en de conversie van organisch verkeer was laag. We moesten de volledige SEO strategie herdenken."}
-                      {caseItem.type === "Local SEO" && "Als lokale dienstverlener was de online zichtbaarheid minimaal. Google My Business was niet geoptimaliseerd en de website rankte niet voor lokale zoektermen. Telefonische leads waren schaars."}
-                      {caseItem.type === "Medical Practice" && "Een moderne online aanwezigheid was nodig die voldoet aan GDPR-eisen en tegelijk gebruiksvriendelijk is voor patiënten. De oude website was verouderd en niet mobiel-vriendelijk."}
-                      {caseItem.type === "Tool Site" && "Het doel was om een eenvoudige maar effectieve tool te maken die zou ranken voor 'btw calculator' en related keywords, terwijl het ook daadwerkelijk nuttig zou zijn voor de doelgroep."}
-                      {caseItem.type === "Calculator Tool" && "Een accurate loonberekeningtool voor de Belgische markt die zou ranken voor gerelateerde zoektermen en tegelijk leads zou genereren voor HR-gerelateerde services."}
-                      {caseItem.type === "Financial Tool" && "Het ontwikkelen van een betrouwbare interessentool die voldoet aan Belgische wetgeving en tegelijk goed zou ranken voor financiële zoektermen."}
-                      {caseItem.type === "SaaS Platform" && "Als B2B SaaS platform was het belangrijk om vertrouwen op te bouwen en enterprise klanten aan te trekken via de website. De conversie van bezoeker naar trial was te laag."}
-                      {caseItem.type === "Programmatic SEO" && "Het doel was om de content schaal dramatisch te vergroten en long-tail keywords te domineren door automatische content generatie, zonder kwaliteit in te boeten."}
-                      {caseItem.type === "Health Tool" && "Een betrouwbare zwangerschapscalculator maken die medisch accurate informatie verstrekt en tegelijk goed rankt voor pregnancy-gerelateerde zoektermen."}
+                      {caseItem.challenge || "Het doel was om online zichtbaarheid, vertrouwen en conversie te verbeteren met een aanpak op maat van de klant."}
                     </p>
                   </div>
                 </div>
@@ -147,7 +131,11 @@ export default async function CasePage({ params }: CasePageProps) {
                   </h2>
                   <div className="prose prose-lg max-w-none text-text-secondary space-y-4">
                     <p>
-                      <strong className="text-foreground">Strategische aanpak:</strong> We hebben een multi-faceted strategie ontwikkeld die {caseItem.services.join(', ').toLowerCase()} combineerde voor maximaal resultaat.
+                      {caseItem.solution || (
+                        <>
+                          <strong className="text-foreground">Strategische aanpak:</strong> We hebben een multi-faceted strategie ontwikkeld die {caseItem.services.join(', ').toLowerCase()} combineerde voor maximaal resultaat.
+                        </>
+                      )}
                     </p>
                     
                     <div className="grid md:grid-cols-2 gap-6 not-prose">
@@ -192,7 +180,7 @@ export default async function CasePage({ params }: CasePageProps) {
                     Behaalde Resultaten
                   </h2>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {Object.entries(caseItem.resultaten).map(([key, value], index) => (
+                    {Object.entries(caseItem.results).map(([key, value], index) => (
                       <Card key={index} className="p-6 text-center bg-accent/5">
                         <CardHeader className="p-0 mb-2">
                           <div className="text-2xl font-bold text-accent">{value}</div>
@@ -210,11 +198,10 @@ export default async function CasePage({ params }: CasePageProps) {
                 {/* Quote */}
                 <Card className="p-8 bg-gradient-to-r from-accent/10 to-purple-600/10">
                   <blockquote className="text-xl md:text-2xl font-semibold text-foreground mb-4 text-center">
-                    "De samenwerking met Hazier heeft onze online aanwezigheid volledig getransformeerd. 
-                    De resultaten overtroffen onze verwachtingen."
+                    {caseItem.quote || "De samenwerking met Hazier heeft onze online aanwezigheid volledig getransformeerd. De resultaten overtroffen onze verwachtingen."}
                   </blockquote>
                   <cite className="text-text-secondary text-center block">
-                    — {caseItem.klant}, {caseItem.titel}
+                    — {caseItem.quoteAuthor || caseItem.client}, {caseItem.title}
                   </cite>
                 </Card>
               </div>
@@ -307,9 +294,9 @@ export default async function CasePage({ params }: CasePageProps) {
                     </div>
                     
                     <CardHeader className="pb-4">
-                      <CardTitle className="text-lg text-foreground">{relatedCase.titel}</CardTitle>
+                      <CardTitle className="text-lg text-foreground">{relatedCase.title}</CardTitle>
                       <CardDescription className="text-text-secondary text-sm">
-                        {relatedCase.beschrijving}
+                        {relatedCase.description}
                       </CardDescription>
                     </CardHeader>
 

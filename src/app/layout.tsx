@@ -10,6 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://hazier.be"),
   title: "Hazier | SEO & Webdesign Agency - Meer Klanten via Google",
   description: "Professionele SEO en webdesign services. Meer klanten, meer groei, meer omzet. 50+ tevreden klanten, bewezen resultaten. Gratis SEO audit.",
   keywords: ["SEO", "webdesign", "digital marketing", "Google", "België", "Vlaanderen"],

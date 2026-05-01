@@ -1,10 +1,12 @@
 import { MetadataRoute } from 'next';
 import nichesData from '@/data/niches.json';
 import stedenData from '@/data/steden.json';
-import casesData from '@/data/cases.json';
 import blogPosts from '@/data/blog-posts.json';
+import { listCases } from '@/lib/cases';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export const dynamic = 'force-dynamic';
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://hazier.be';
 
   // Static pages
@@ -110,7 +112,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Case pages
-  const casePages = casesData.map((caseItem) => ({
+  const casePages = (await listCases()).map((caseItem) => ({
     url: `${baseUrl}/cases/${caseItem.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,

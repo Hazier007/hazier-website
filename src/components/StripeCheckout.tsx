@@ -6,19 +6,19 @@ import { Button } from "@/components/ui/Button";
 type CheckoutMode = "payment" | "subscription";
 
 interface StripeCheckoutProps {
-  priceId?: string;
+  packageKey?: string;
   mode: CheckoutMode;
   pakketNaam: string;
   popular?: boolean;
   label?: string;
 }
 
-export function StripeCheckout({ priceId, mode, pakketNaam, popular, label }: StripeCheckoutProps) {
+export function StripeCheckout({ packageKey, popular, label }: StripeCheckoutProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleCheckout = async () => {
-    if (!priceId) return;
+    if (!packageKey) return;
 
     setLoading(true);
     setError(null);
@@ -27,7 +27,7 @@ export function StripeCheckout({ priceId, mode, pakketNaam, popular, label }: St
       const response = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ priceId, mode, pakketNaam }),
+        body: JSON.stringify({ packageKey }),
       });
 
       if (!response.ok) {
@@ -56,10 +56,10 @@ export function StripeCheckout({ priceId, mode, pakketNaam, popular, label }: St
         className={`w-full ${popular ? "bg-accent hover:bg-accent/90" : ""}`}
         variant={popular ? "primary" : "outline"}
         onClick={handleCheckout}
-        disabled={loading || !priceId}
-        title={!priceId ? "Stripe priceId ontbreekt (env vars nog niet gezet)" : undefined}
+        disabled={loading || !packageKey}
+        title={!packageKey ? "Stripe package key ontbreekt" : undefined}
       >
-        {loading ? "Laden..." : !priceId ? "Setup nodig" : label || "Bestellen"}
+        {loading ? "Laden..." : !packageKey ? "Setup nodig" : label || "Bestellen"}
       </Button>
       {error && (
         <p className="mt-2 text-sm text-red-400 text-center">
